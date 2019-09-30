@@ -1,10 +1,11 @@
 /* Change style of navbar on scroll */
 
 $(document).ready(function () {
+	document.getElementById('nav-btn').addEventListener('click', handleNavAnimationClick);
+
 	$('.accordion-wrapper > ul > li:has(ul)').addClass("accordion-content");
 
     $('.accordion-wrapper > ul > li > a').click(function () {
-		console.log('clickee')
         var checkElement = $(this).next();
 
         $('.accordion-wrapper li').removeClass('accordion-active');
@@ -28,31 +29,43 @@ $(document).ready(function () {
     });
 });
 
-$(window).scroll(() => myFunction() )
 
-// window.onscroll = function () { myFunction() };
-function myFunction() {
+$(window).scroll( () => navScroll() );
+
+navScroll = () => {
 	var navbar = document.getElementById("myNavbar");
-	if ($(body).scrollTop > 10 || document.documentElement.scrollTop > 10) {
+	if ($('body').scrollTop > 10 || document.documentElement.scrollTop > 10) {
 		navbar.className = "w3-bar" + " w3-card" + " w3-light-white" + " background-white ";
 		$('.w3-button').css({
 			'color': '#000'
 		})
 	} else {
-		$('#myNavbar').removeClass("w3-card w3-animate-top w3-light-white background-white");
+		$('#myNavbar').removeClass("w3-card w3-light-white background-white");
 		$('.w3-button').css({
 			'color': '#000'
 		})
 	}
 }
-// Used to toggle the menu on small screens when clicking on the menu button
-function toggleFunction() {
-	var x = document.getElementById("navDemo");
-	if (x.className.indexOf("w3-show") == -1) {
-		x.className += " w3-show";
-	} else {
-		x.className = x.className.replace(" w3-show", "");
-	}
+
+// Navigation
+let nav = $('.navigation-menu-wrapper');
+let navBtn = $('#nav-btn');
+let sidenav = $('.nav-menu');
+let main = $('.background');
+let body = $('body');
+
+handleNavAnimationClick = () => {
+    if ($(navBtn).hasClass('on')){
+        $(navBtn).removeClass('on');
+        $(sidenav).removeClass('sidenav-transform-x');
+        $(main).removeClass('main-transform-x');
+        $(body).removeClass('no-scroll');
+    } else {
+        $(navBtn).addClass('on');
+        $(sidenav).addClass('sidenav-transform-x');
+        $(main).addClass('main-transform-x');
+        $(body).addClass('no-scroll');
+    }
 }
 
 // Parallax Responsive Background Image
