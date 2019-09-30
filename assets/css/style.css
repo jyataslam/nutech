@@ -100,6 +100,7 @@
     background-color:whitesmoke;
     scroll-behavior: smooth;
     letter-spacing: 0.03rem;
+    overflow-x: hidden;
   }
   
   h3 {font-family: "Roboto", sans-serif;}
@@ -175,9 +176,9 @@
   }
 
   @media(min-width:768px) {
-    .w3-row-padding {
+    /* .w3-row-padding {
       flex-flow: row nowrap;
-    }
+    } */
   }
 
   p {
@@ -546,15 +547,38 @@
 .hero {
   padding: 80px 0;
   background: linear-gradient(90deg, rgba(248,247,255,1) 0%, rgba(203,206,221,1) 50%, rgba(248,247,255,1) 100%);
-  background-image: url(../images/hero-background.png);
+  background-image: url(../images/hero-skeleton-opaque.png);
   background-size: cover;
   background-attachment: fixed;
   height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   position: relative;
-  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25);
+}
+
+.creds-container {
+  position: relative;
+  top: 12%;
+}
+
+.creds-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-creds-title {
+  display: inline-block;
+  font-size: 1.5rem;
+  padding-right: 1rem;
+}
+
+.hero-creds-img {
+  display: inline-block;
+  height: 100px;
 }
 
 .hero-row {
@@ -624,7 +648,7 @@
 }
 
 .about-us {
-  background-color: rgb(245, 245, 245);
+  background-color: rgb(249, 249, 249);
   color: #000;
   padding: 80px 0;
 }
@@ -637,13 +661,15 @@
 .about-us-video-container {
   display: flex;
   height: 280px;
+  padding-top: 1rem;
 }
 
 .about-us-video-container iframe {
   margin: 0 auto;
   width: 100%;
   padding: 3px;
-  border: 1px solid grey
+  border: 1px solid grey;
+  height: 280px;
 }
 
 .about-us-header {
@@ -810,11 +836,7 @@ a.footer-span:hover {
 
 .info {
   padding: 80px 0;
-  background-image: url(../images/info-background.png);
-  background-size: contain;
-  background-repeat: repeat;
-  background-attachment: fixed;
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.4);
+  background-color: rgb(249, 249, 249);
 }
 
 .info-header {
@@ -931,15 +953,149 @@ a.footer-span:hover {
   background: none !important;
 }
 
+.w3-show {
+  background-color: white;
+}
+
+.sidenav-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sidenav-wrapper > a {
+  color: black;
+  text-align: center !important;
+}
+
+.pharma-row {
+  min-height: 400px;
+  background-color: white;
+}
+
+.pharma-image {
+  background-image: url(../images/pharmacy-fade.jpg);
+  background-position: left;
+  background-size: cover;
+  height: 100%;
+}
+
+.pharma-image-long img {
+  width: 100%;
+}
+
+.pharma-photo {
+  width: 100%;
+}
+
+.pharma .container-fluid {
+  padding: 0;
+}
+
+.pharma-text-container {
+  padding: 3rem 2rem;
+  display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.pharma-text-row {
+  padding: 3rem;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.vertical-line {
+  transform: rotate(90deg);
+  width: 60px;
+  border-top: 1px solid rgba(65, 65, 65, 0.534);
+  margin: 2rem auto;
+}
+
+.pharma-header {
+  text-align: center;
+  padding-bottom: 1rem;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.pharma-text {
+  font-size: 1rem;
+  line-height: 1.75;
+  text-align: center;
+}
+
+.doctor {
+  height: 300px;
+  background-image: url(../images/pharmacy.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+
 @media only screen and (max-width: 1024px){
+    .nutech-hero-logo {
+      width: 900px;
+    }
+
     .faq-hero-title {
         font-size: 4rem;
+    }
+
+    .phone-number-location {
+      font-size: 2rem;
+    }
+
+    .creds-container {
+      top: 27%;
+    }
+
+    .commish-award-photo {
+      height: 150px;
     }
 }
 
 @media only screen and (max-width: 768px){
     .faq-hero-title {
         font-size: 3rem;
+    }
+
+    .nutech-hero-logo {
+      width: 670px;
+    }
+
+    .creds-container {
+      top: 21%;
+    }
+
+    .phone-number-location {
+      font-size: 1.5rem;
+    }
+
+    .about-us-description {
+      padding-bottom: 2rem;
+    }
+
+    .commish-title {
+      font-size: 1.4rem;
+    }
+
+    .commish-text {
+      font-size: .875rem;
+    }
+
+    .missy-card-header {
+      font-size: 1.4rem;
+    }
+
+    .phone .container-fluid .row {
+      justify-content: center;
+    }
+
+    .phone-container {
+      width: 33.3%;
     }
 }
 
@@ -967,13 +1123,144 @@ a.footer-span:hover {
     .faq-header {
         font-size: 2rem;
     }
+
+    .nutech-hero-logo {
+      width: 300px;
+    }
+
+    .hero-creds-title {
+      font-size: .7rem;
+    }
+
+    .hero-creds-img {
+      height: 50px;
+    }
+
+    .phone-number-location {
+      font-size: .7rem;
+    }
+
+    .phone-number {
+      font-size: .875rem;
+    }
+
+    .creds-container {
+      top: -84px;
+    }
+
+    .about-us-header {
+      font-size: 1.5rem;
+      padding-bottom: 1rem;
+    }
+
+    .about-us-description {
+      font-size: .875rem;
+    }
+
+    .links-title {
+      font-size: 1rem;
+    }
+
+    .link-icon {
+      font-size: 5rem;
+    }
+
+    .commish-text-container {
+      order: 2;
+      padding-top: 2rem;
+    }
+
+    .commish-photo-container {
+      order: 1;
+    }
+    
+    .commish-photo {
+      height: 125px;
+    }
+
+    .nnsa-photo-container {
+      padding-top: 3rem;
+    }
+
+    .nnsa-text {
+      font-size: .875rem;
+    }
+
+    .commish-award-container {
+      width: 100%;
+    }
+
+    .commish-award-photo {
+      height: 90px;
+    }
+
+    .custom-w3-row {
+      padding: inherit;
+    }
+
+    .info-card-flex {
+      padding: 1rem;
+    }
+
+    .missy-card-header {
+      font-size: 1.2rem;
+    }
+    
+    .missy-card-text {
+      font-size: .875rem;
+    }
+
+    .w3-row-padding > .w3-third {
+      padding: initial;
+      margin-bottom: 0;
+    }
+
+    .info-card-flex {
+      background-color: transparent;
+      margin-bottom: 0;
+      min-height: initial;
+    }
+
+    .missy-card-header {
+      background: transparent;
+    }
+
+    .footer-copyright {
+      font-size: .7rem;
+    }
+
+    .logo-image {
+      margin-left: 0;
+    }
+}
+
+@media only screen and (max-width: 375px){
+  .hero-creds-title {
+    font-size: .675rem;
+  }
+
+  .phone-number-location {
+    font-size: .6rem;
+  }
+
+  .about-us {
+    padding: 60px 0;
+  }
+
+  .commish-award-photo {
+    height: 82px;
+  }
+
+  .info {
+    padding: 60px 0 30px;
+  }
+
+  .footer-nutech-logo {
+    width: 150px;
+  }
 }
 
 
-  /* -------------------------------
-     Fix box display issue in Safari
-     ------------------------------- */
-    
  /* ---------------------
    Make tables responsive 
    ---------------------- */

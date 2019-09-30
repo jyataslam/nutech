@@ -53,14 +53,16 @@
 
         <!-- Navbar on small screens -->
         <div id="navDemo" class="w3-bar-block w3-light-grey w3-hide w3-hide-large">
-            <a href="./index.html" class="w3-bar-item w3-button" onclick="toggleFunction()">Home</a>
-            <a href="./testimonials.html" class="w3-bar-item w3-button" onclick="toggleFunction()">Testimonials</a>
-            <a href="./company.html" class="w3-bar-item w3-button" onclick="toggleFunction()">Company</a>
-            <a href="./media.html" class="w3-bar-item w3-button" onclick="toggleFunction()">Media</a>
-            <a href="./team.html" class="w3-bar-item w3-button" onclick="toggleFunction()">Team</a>
-            <a href="./products.html" class="w3-bar-item w3-button" onclick="toggleFunction()">Products</a>
-            <a href="./services.html" class="w3-bar-item w3-button" onclick="toggleFunction()">Services</a>
-            <a href="./resources.html" class="w3-bar-item w3-button" onclick="toggleFunction()">Resources</a>
+            <div class="sidenav-wrapper">
+                <a href="./index.html" class="w3-bar-item w3-button" onclick="toggleFunction()">Home</a>
+                <a href="./testimonials.html" class="w3-bar-item w3-button" onclick="toggleFunction()">Testimonials</a>
+                <a href="./company.html" class="w3-bar-item w3-button" onclick="toggleFunction()">Company</a>
+                <a href="./media.html" class="w3-bar-item w3-button" onclick="toggleFunction()">Media</a>
+                <a href="./team.html" class="w3-bar-item w3-button" onclick="toggleFunction()">Team</a>
+                <a href="./products.html" class="w3-bar-item w3-button" onclick="toggleFunction()">Products</a>
+                <a href="./services.html" class="w3-bar-item w3-button" onclick="toggleFunction()">Services</a>
+                <a href="./resources.html" class="w3-bar-item w3-button" onclick="toggleFunction()">Resources</a>
+            </div>
         </div>
     </div>
 
@@ -71,18 +73,27 @@
                     <img src="assets/svg/LOGOblutrans.svg" class="nutech-hero-logo">
                 </div>
             </div>
+            <div class="container creds-container">
+                <div class="row creds-row">
+                    <div class="hero-creds-container">
+                        <h1 class="hero-creds-title">Proudly Accredited By The Joint Commission</h1>
+                        <img src="./assets/images/GoldSeal_transparent.gif" alt="Joint Commission Accreditation Seal"
+                            class="hero-creds-img">
+                    </div>
+                </div>
+            </div>
             <div id="phone" class="phone">
                 <div class="container-fluid">
                     <div class="row">
-                        <div class="phone-container col-lg-4 col-md-12">
+                        <div class="phone-container col-xs-12 col-lg-4">
                             <h1 class="phone-number-location">Tyler, TX</h1>
                             <a href="tel:+1903-592-8115" class="phone-number">903.592.8115</a>
                         </div>
-                        <div class="phone-container left-border col-lg-4 col-md-12">
+                        <div class="phone-container left-border col-xs-12 col-lg-4">
                             <h1 class="phone-number-location">College Station, TX</h1>
                             <a href="tel:+1979-268-0513" class="phone-number">979.268.0513</a>
                         </div>
-                        <div class="phone-container left-border col-lg-4 col-md-12">
+                        <div class="phone-container left-border col-xs-12 col-lg-4">
                             <h1 class="phone-number-location">Wichita Falls, TX</h1>
                             <a href="tel:+1940-761-1110" class="phone-number">940.761.1110</a>
                         </div>
@@ -91,8 +102,60 @@
             </div>
         </div>
 
+        <section id="pharma" class="pharma">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="pharma-image-long col-sm-12">
+                        <img src="./assets/images/pharmacist.jpg" alt="pharmacist with medicine">
+                    </div>
+                </div>
+            </div>
+            <div class="container pharma-text-container">
+                <div class="row pharma-text-row">
+                    <h1 class="pharma-header">Our Pharmacists</h1>
+                    <p class="pharma-text">Highly trained and competent nuclear pharmacists staff all of
+                        our pharmacies. Most of our
+                        pharmacists are board certified nuclear pharmacists by the Board of Pharmaceutical
+                        Specialties, the highest degree of recognition and training in our field.</p>
+                </div>
+                <hr class="vertical-line">
+                <div class="row pharma-text-row">
+                    <h1 class="pharma-header">Our Clients</h1>
+                    <p class="pharma-text">NuTech currently serves hospitals and clinics throughout East
+                        Texas, North Central
+                        Texas, and Southern Oklahoma.<br>
+                        Visit our <a href="testimonials.html" target="_blank">testimonials</a> page to read
+                        what Our Customers
+                        have to
+                        say about NuTech, Inc.</p>
+                </div>
+                <hr class="vertical-line">
+                <div class="row pharma-text-row">
+                    <h1 class="pharma-header">About Us</h1>
+                    <p class="pharma-text">NuTech, Inc. pharmacists ensure that every
+                        radiopharmaceutical
+                        dose that is ordered
+                        by your
+                        facility is the right dose for the right patient at the right time - every time! NuTech,
+                        Inc. is
+                        confident of this level of service because every part of every prescription transaction is
+                        overseen
+                        by a registered pharmacist. Answering the phone, processing the prescription, preparing the
+                        radiopharmaceutical kit are all performed by pharmacists. This level of service and
+                        commitment
+                        to
+                        you, our customer, is unparalleled in the nuclear pharmacy market today.</p>
+                    <div class="col-lg-6 col-md-12 about-us-video-container">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/_KYyDuyhxS8"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-        <section id="about-us" class="about-us">
+        <!-- <section id="about-us" class="about-us">
             <div class="container">
                 <div class="row">
                     <h1 class="col-sm-12 about-us-header"><span>About Us</span></h1>
@@ -121,7 +184,10 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
+
+        <div class="doctor">
+        </div>
 
         <!-- Links and Info Section  -->
         <section id="info" class="info">
@@ -292,61 +358,11 @@
                     </div>
                 </div>
             </div>
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="w3-row-padding w3-center w3-margin-top w3-margin-bottom custom-w3-row">
-                        <div class="w3-third">
-                            <div class="w3-card-home w3-container info-card-flex">
-                                <h3 class="missy-card-header">Our Pharmacists</h3><br>
-                                <img src="assets/images/BPS logo.png" alt="NNSA" width="100em" height="auto">
-                                </br>
-                                <p class="missy-card-text">Highly trained and competent nuclear pharmacists staff all of
-                                    our pharmacies. Most of our
-                                    pharmacists are board certified nuclear pharmacists by the Board of Pharmaceutical
-                                    Specialties, the highest degree of recognition and training in our field.</p>
-                            </div>
-                        </div>
-
-                        <div class="w3-third">
-                            <div class="w3-card-home w3-container info-card-flex">
-                                <h3 class="missy-card-header">Our Clients</h3><br>
-                                <i class="fas fa-users w3-margin-bottom w3-text-theme" style="font-size:90px"></i>
-                                <p class="missy-card-text">NuTech currently serves hospitals and clinics throughout East
-                                    Texas, North Central
-                                    Texas, and Southern Oklahoma.<br><br>
-                                    Visit our <a href="testimonials.html" target="_blank">testimonials</a> page to read
-                                    what Our Customers
-                                    have to
-                                    say about NuTech, Inc.</p>
-                            </div>
-                        </div>
-
-                        <div class="w3-third">
-                            <div class="w3-card-home w3-container info-card-flex extra-padding">
-                                <h3 class="missy-card-header">Our Locations</h3><br>
-                                <i class="fas fa-globe-americas w3-margin-bottom w3-text-theme"
-                                    style="font-size:90px"></i>
-                                <div class="row">
-                                    <div class="locations-container col-sm-4">
-                                        <h5 class="locations-text">Tyler<br>TX</h5>
-                                        <h5 class="locations-text">903.592.8115</h5>
-                                    </div>
-                                    <div class="locations-container col-sm-4">
-                                        <h5 class="locations-text">College Station TX</h5>
-                                        <h5 class="locations-text">979.268.0513</h5>
-                                    </div>
-                                    <div class="locations-container col-sm-4">
-                                        <h5 class="locations-text">Wichita Falls<br>TX</h5>
-                                        <h5 class="locations-text">940.761.1110</h5>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
         </section>
         </div>
+
+
         </div>
 
         <!-- Jason's Footer -->
@@ -368,7 +384,7 @@
         <script src="https://code.jquery.com/jquery-3.4.1.min.js"
             integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 
-        <script src="assets/js/index.js"></script>
+        <script src="./assets/js/index.js"></script>
 
 </body>
 
