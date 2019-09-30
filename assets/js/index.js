@@ -28,10 +28,12 @@ $(document).ready(function () {
     });
 });
 
-window.onscroll = function () { myFunction() };
+$(window).scroll(() => myFunction() )
+
+// window.onscroll = function () { myFunction() };
 function myFunction() {
 	var navbar = document.getElementById("myNavbar");
-	if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
+	if ($(body).scrollTop > 10 || document.documentElement.scrollTop > 10) {
 		navbar.className = "w3-bar" + " w3-card" + " w3-light-white" + " background-white ";
 		$('.w3-button').css({
 			'color': '#000'
