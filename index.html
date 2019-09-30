@@ -22,15 +22,13 @@
 
 <body>
 
-    <!-- Navbar (sit on top) -->
+   
     <div class="w3-top">
         <div class="w3-bar myNavbar" id="myNavbar">
-            <a class="w3-bar-item w3-button w3-hover-black w3-hide-large w3-right" href="javascript:void(0);"
-                onclick="toggleFunction()" title="Toggle Navigation Menu">
+            <a id="nav-btn" class="w3-bar-item w3-button w3-hover-black w3-hide-large w3-right" href="javascript:void(0);" title="Toggle Navigation Menu">
                 <i class="fa fa-bars"></i>
             </a>
 
-            <!-- Logo -->
             <a class="logo-image">
                 <img src="assets/svg/LOGOblutrans.svg" class="img-fluid nutech-navbar-logo"></a>
             <a href="./resources.html" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-right">
@@ -52,7 +50,7 @@
         </div>
 
         <!-- Navbar on small screens -->
-        <div id="navDemo" class="w3-bar-block w3-light-grey w3-hide w3-hide-large">
+        <!-- <div id="navDemo" class="w3-bar-block w3-light-grey w3-hide w3-hide-large">
             <div class="sidenav-wrapper">
                 <a href="./index.html" class="w3-bar-item w3-button" onclick="toggleFunction()">Home</a>
                 <a href="./testimonials.html" class="w3-bar-item w3-button" onclick="toggleFunction()">Testimonials</a>
@@ -63,7 +61,42 @@
                 <a href="./services.html" class="w3-bar-item w3-button" onclick="toggleFunction()">Services</a>
                 <a href="./resources.html" class="w3-bar-item w3-button" onclick="toggleFunction()">Resources</a>
             </div>
+        </div> -->
+
+        <!-- Create Side Nav when open -->
+    <div id="nav-menu" class="nav-menu">
+        <div class="container">
+            <div class="row">
+                <ul class="nav-menu-list">
+                    <li class="nav-menu-list-item">
+                        <a href="./index.html" class="w3-bar-item w3-button" onclick="toggleFunction()">Home</a>
+                    </li>
+                    <li class="nav-menu-list-item">
+                        <a href="./testimonials.html" class="w3-bar-item w3-button" onclick="toggleFunction()">Testimonials</a>
+                    </li>
+                    <li class="nav-menu-list-item">
+                        <a href="./company.html" class="w3-bar-item w3-button" onclick="toggleFunction()">Company</a>
+                    </li>
+                    <li class="nav-menu-list-item">
+                        <a href="./media.html" class="w3-bar-item w3-button" onclick="toggleFunction()">Media</a>
+                    </li>
+                    <li class="nav-menu-list-item">
+                        <a href="./team.html" class="w3-bar-item w3-button" onclick="toggleFunction()">Team</a>
+                    </li>
+                    <li class="nav-menu-list-item">
+                        <a href="./products.html" class="w3-bar-item w3-button" onclick="toggleFunction()">Products</a>
+                    </li>
+                    <li class="nav-menu-list-item">
+                        <a href="./services.html" class="w3-bar-item w3-button" onclick="toggleFunction()">Services</a>
+                    </li>
+                    <li class="nav-menu-list-item">
+                        <a href="./resources.html" class="w3-bar-item w3-button" onclick="toggleFunction()">Resources</a>
+                    </li>
+                </ul>
+            </div>
         </div>
+    </div>
+
     </div>
 
     <section class="background">
