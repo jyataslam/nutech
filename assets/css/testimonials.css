@@ -1,0 +1,54 @@
+
+.landing-top {
+    height: 42vh;
+    width: 100%;
+    background: url(../images/pharmacist.jpg);
+    background-size: cover;
+}
+
+.other-navbar {
+    background: #ffffffb3;
+}
+
+#testimonials {
+    font-family: 'Quicksand', sans-serif;
+    padding: 50px 0;
+}
+
+.test-row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.test-header {
+    font-family: inherit;
+    margin: 0 auto;
+    padding-bottom: 1rem;
+}
+
+.test-desc {
+    font-family: inherit;
+}
+
+.client-container {
+    padding: 2rem 0;
+}
+
+.client-row-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.client-test-desc {
+    margin: 0 auto;
+    font-family: inherit;
+    text-align: center;
+}
+
+.client-italic {
+    font-family: inherit;
+    text-align: right;
+    font-style: italic;
+}

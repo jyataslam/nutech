@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-<title>NuTech Client Testamonials</title>
+<title>NuTech, Inc</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3pro.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto|Quicksand:400,500,600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+<link rel="stylesheet" href="./assets/css/testimonials.css" type="text/css">
 <script src="https://kit.fontawesome.com/96a8611a1e.js"></script>
 
-<script src="assets/js/index.js"></script>
 
 <!-- #BeginEditable "keywords" -->
 <meta name="keywords"
@@ -24,16 +24,14 @@
 
 <body>
 
-    <!-- Navbar (sit on top) -->
-    <div class="w3-top">
-        <div class="w3-bar myNavbar navbar-other-pages" id="myNavbar">
-            <a class="w3-bar-item w3-button w3-hover-black w3-hide-large w3-right" href="javascript:void(0);"
-                onclick="toggleFunction()" title="Toggle Navigation Menu">
+    <div class="w3-top other-navbar">
+        <div class="w3-bar myNavbar" id="myNavbar">
+            <a id="nav-btn" class="w3-bar-item w3-button w3-hover-black w3-hide-large w3-right"
+                href="javascript:void(0);" title="Toggle Navigation Menu">
                 <i class="fa fa-bars"></i>
             </a>
 
-            <!-- Logo -->
-            <a class="logo-image">
+            <a class="logo-image" href="./index.html">
                 <img src="assets/svg/LOGOblutrans.svg" class="img-fluid nutech-navbar-logo"></a>
             <a href="./resources.html" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-right">
                 Resources</a>
@@ -53,178 +51,214 @@
                 class="w3-bar-item w3-button w3-bar-item w3-button w3-hide-small w3-hide-medium w3-right">Home</a>
         </div>
 
-        <!-- Navbar on small screens -->
-        <div id="navDemo" class="w3-bar-block w3-light-grey w3-hide w3-hide-large">
-            <a href="./index.html" class="w3-bar-item w3-button" onclick="toggleFunction()">Home</a>
-            <a href="./testimonials.html" class="w3-bar-item w3-button" onclick="toggleFunction()">Testimonials</a>
-            <a href="./company.html" class="w3-bar-item w3-button" onclick="toggleFunction()">Company</a>
-            <a href="./media.html" class="w3-bar-item w3-button" onclick="toggleFunction()">Media</a>
-            <a href="./team.html" class="w3-bar-item w3-button" onclick="toggleFunction()">Team</a>
-            <a href="./products.html" class="w3-bar-item w3-button" onclick="toggleFunction()">Products</a>
-            <a href="./services.html" class="w3-bar-item w3-button" onclick="toggleFunction()">Services</a>
-            <a href="./resources.html" class="w3-bar-item w3-button" onclick="toggleFunction()">Resources</a>
-        </div>
-    </div>
-
-    <!-- Background Image -->
-    <div class="background">
-        <div class="bgimg-1 w3-display-container w3-padding-64">
-            <div class="w3-row-padding w3-center w3-margin-top-calc w3-margin-bottom">
-                <div id="page-container">
-                    <div class="w3-container">
-                        <div class="w3-row-padding w3-center w3-margin-top">
-                            <div class="w3-panel">
-                                <div class="w3-card-company">
-                                    <h2 class="w3-center-testamonials">Client Testimonials</h2>
-                                    <br>
-                                    </br>
-                                    <p>"The pharmacy and its employees in Tyler are top shelf. It is refreshing to deal
-                                        with a
-                                        business that
-                                        puts its customers first. I have always had dependable and friendly service over
-                                        the
-                                        past
-                                        15+ years.
-                                        And if that wasn't enough, the provide dinner and free continuing education
-                                        regularly!"
-                                        <i> Gary, Henderson Memorial Hospital</i>
-                                    </p>
-                                    <div class="w3-row">
-                                        <div class="w3-row m6 w3-center w3-round">
-                                            <img src="assets/images/NuTech Periodic Table.png" class="w3-round w3-image"
-                                                alt="Periodic Table" width="350" height="250">
-                                            <br></br>
-                                        </div>
-
-                                        <div class="w3-row m6">
-                                            <p>"<i>NuTech, Inc. </i> is professional, friendly and knowledgeable about
-                                                the products. Customer
-                                                service is
-                                                excellent. Deliveries are quick--day or night, weekday or weekends.
-                                                <i>NuTech, Inc. </i> is
-                                                the
-                                                best we've
-                                                seen by far."<i> Jimmy, Palestine Regional Medical Center</i></p>
-                                        </div>
-
-                                        <div class="w3-row m6">
-                                            <p>"We have used <i>NuTech, Inc. </i> for many years. They are very
-                                                friendly, courteous and always
-                                                willing to go the extra mile to help in any way possible. They are
-                                                always prompt
-                                                and professional. They have an exceptional staff from the top
-                                                (administration)
-                                                to the bottom (drivers). We are very thankful to have them as our
-                                                Nuclear
-                                                Pharmacy Provider."<i> Sheila, Longview Regional Hospital</i></p>
-                                        </div>
-
-                                        <div class="w3-row">
-                                            <div class="w3-content w3-container w3-padding-0"></div>
-                                            <p>"I have worked with <i>NuTech, Inc. </i> for about 9 years. Every person
-                                                I have dealt with in
-                                                that company has always been very friendly, helpful and professional.
-                                                Anytime I
-                                                have had any questions, they have answered them or directed me to
-                                                someone who
-                                                could. It is very clear to me that this company always puts the customer
-                                                first."<i> Alaine, Good Shepherd Medical Center</i></p>
-                                        </div>
-
-                                        <div class="w3-row">
-                                            <div class="w3-content w3-container w3-padding-0"></div>
-                                            <p>"<i>NuTech, Inc. </i> is one of the best pharmacies I have worked with.
-                                                If we have a problem or
-                                                question we have results within minutes! The pharmacists and staff are
-                                                very
-                                                friendly, professional and offer great customer service."<i> Audrey, St.
-                                                    Joseph
-                                                    Regional Health Center</i></p>
-                                        </div>
-                                        <div class="w3-row">
-                                            <div class="w3-content w3-container w3-padding-0"></div>
-                                            <p>"<i>NuTech, Inc. </i> service has been prompt and its staff is
-                                                professional and courteous."<i>
-                                                    Stefano, Huntsville Memorial Hospital</i></p>
-                                        </div>
-                                        <div class="w3-row">
-                                            <div class="w3-content w3-container w3-padding-0"></div>
-                                            <p>"Since the early 1990's I have worked at one hospital site or another
-                                                that is
-                                                serviced by <i>NuTech, Inc. </i>. Without exception, regardless of the
-                                                pharmacy location, I've
-                                                always been treated like a special customer."<i> Dale, St. Joseph
-                                                    Regional Health Center</i></p>
-                                        </div>
-                                        <div class="w3-row">
-                                            <div class="w3-content w3-container w3-padding-0"></div>
-                                            <p>"All of the <i>NuTech, Inc. </i> personnel have always been professional,
-                                                courteous, and
-                                                friendly during the 9 years we've been working with them. The times we
-                                                have
-                                                needed advice, questions answered, or just a helping hand with nuclear
-                                                medicine,
-                                                Randy and his staff have been more than happy to help. When called upon
-                                                they've
-                                                always gone the extra mile exemplifying their attitude and desire to be
-                                                an
-                                                integral part of our nuclear medicine team."<i> Ed and Lauren, Scott &
-                                                    White
-                                                    Clinic</i></p>
-                                        </div>
-                                        <div class="w3-row">
-                                            <div class="w3-content w3-container w3-padding-0"></div>
-                                            <p>"<i>NuTech, Inc. </i> offers outstanding service to our area. Their
-                                                Pharmaceutical
-                                                Department, as well as their office staff, are very helpful, friendly,
-                                                and above
-                                                all, very knowledgeable. We are pleased to have <i>NuTech Inc.'s </i>
-                                                service available for
-                                                our facility."<i> Lisa, St. Mark's
-                                                    Medical Center</i></p>
-                                        </div>
-                                        <div class="w3-row">
-                                            <div class="w3-content w3-container w3-padding-0"></div>
-                                            <p>"<i>NuTech, Inc. </i> is great. For years I used [another radiopharmacy]
-                                                and I thought that
-                                                they were unbeatable. I was wrong. Thank you <i>NuTech, Inc. </i> for
-                                                all you do."<i> George,
-                                                    Duncan
-                                                    Regional Hospital</i></p>
-                                        </div>
-                                        <div class="w3-row">
-                                            <div class="w3-content w3-container w3-padding-0"></div>
-                                            <p>"The guys at <i>NuTech, Inc. </i> are wonderful! They go above and beyond
-                                                to make sure we are
-                                                taken care of, and their customer service is exceptional. We have been
-                                                very
-                                                fortunate to work with such professional pharmacists!"<i> Tasha, Valley
-                                                    View
-                                                    Regional Hospital</i></p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+        <!-- Create Side Nav when open -->
+        <div id="nav-menu" class="nav-menu">
+            <div class="container">
+                <div class="row">
+                    <ul class="nav-menu-list">
+                        <li class="nav-menu-list-item">
+                            <a href="./index.html" class="w3-bar-item w3-button">Home</a>
+                        </li>
+                        <hr class="sidenav-hr">
+                        <li class="nav-menu-list-item">
+                            <a href="./testimonials.html" class="w3-bar-item w3-button">Testimonials</a>
+                        </li>
+                        <hr class="sidenav-hr">
+                        <li class="nav-menu-list-item">
+                            <a href="./company.html" class="w3-bar-item w3-button">Company</a>
+                        </li>
+                        <hr class="sidenav-hr">
+                        <li class="nav-menu-list-item">
+                            <a href="./media.html" class="w3-bar-item w3-button">Media</a>
+                        </li>
+                        <hr class="sidenav-hr">
+                        <li class="nav-menu-list-item">
+                            <a href="./team.html" class="w3-bar-item w3-button">Team</a>
+                        </li>
+                        <hr class="sidenav-hr">
+                        <li class="nav-menu-list-item">
+                            <a href="./products.html" class="w3-bar-item w3-button">Products</a>
+                        </li>
+                        <hr class="sidenav-hr">
+                        <li class="nav-menu-list-item">
+                            <a href="./services.html" class="w3-bar-item w3-button">Services</a>
+                        </li>
+                        <hr class="sidenav-hr">
+                        <li class="nav-menu-list-item">
+                            <a href="./resources.html" class="w3-bar-item w3-button">Resources</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
 
+    </div>
 
-        <!-- Footer -->
+    <section id="background" class="background">
+        <div id="landing-top" class="landing-top"></div>
+
+        <div id="testimonials" class="testimonials">
+            <div class="container">
+                <div class="row test-row">
+                    <h1 class="test-header col-xs-12">Client Testimonials</h1>
+                    <p class="test-desc col-xs-12">See what our clients have to say about NuTech, Inc.</p>
+                </div>
+            </div>
+            <div class="container client-container">
+                <div class="row client-row-wrapper">
+                    <p class="client-test-desc col-xs-12">
+                        "The pharmacy and its employees in Tyler are top shelf. It is refreshing to deal
+                        with a
+                        business that
+                        puts its customers first. I have always had dependable and friendly service over
+                        the
+                        past
+                        15+ years.
+                        And if that wasn't enough, the provide dinner and free continuing education
+                        regularly!"
+                    </p>
+                    <p class="client-italic">- Gary, Henderson Memorial Hospital</p>
+                </div>
+            </div>
+            <div class="container client-container">
+                <div class="row client-row-wrapper">
+                    <p class="client-test-desc">
+                        "NuTech, Inc. is professional, friendly and knowledgeable about
+                        the products. Customer
+                        service is
+                        excellent. Deliveries are quick--day or night, weekday or weekends.
+                        NuTech, Inc. is
+                        the
+                        best we've
+                        seen by far."
+                    </p>
+                    <p class="client-italic">- Jimmy, Palestine Regional Medical Center</p>
+                </div>
+            </div>
+            <div class="container client-container">
+                <div class="row client-row-wrapper">
+                    <p class="client-test-desc">
+                        "We have used NuTech, Inc. for many years. They are very friendly, courteous and always willing
+                        to go the extra mile to help in any way possible. They are always prompt and professional. They
+                        have an exceptional staff from the top (administration) to the bottom (drivers). We are very
+                        thankful to have them as our Nuclear Pharmacy Provider."
+                    </p>
+                    <p class="client-italic">- Sheila, Longview Regional Hospital</p>
+                </div>
+            </div>
+            <div class="container client-container">
+                <div class="row client-row-wrapper">
+                    <p class="client-test-desc">
+                        "I have worked with NuTech, Inc. for about 9 years. Every person I have dealt with in that
+                        company has always been very friendly, helpful and professional. Anytime I have had any
+                        questions, they have answered them or directed me to someone who could. It is very clear to me
+                        that this company always puts the customer first."
+                    </p>
+                    <p class="client-italic">- Alaine, Good Shepherd Medical Center</p>
+                </div>
+            </div>
+            <div class="container client-container">
+                <div class="row client-row-wrapper">
+                    <p class="client-test-desc">
+                        "NuTech, Inc. is one of the best pharmacies I have worked with. If we have a problem or question
+                        we have results within minutes! The pharmacists and staff are very friendly, professional and
+                        offer great customer service."
+                    </p>
+                    <p class="client-italic">- Audrey, St. Joseph Regional Health Center</p>
+                </div>
+            </div>
+            <div class="container client-container">
+                <div class="row client-row-wrapper">
+                    <p class="client-test-desc">
+                        "NuTech, Inc. service has been prompt and its staff is professional and courteous."
+                    </p>
+                    <p class="client-italic">- Stefano, Huntsville Memorial Hospital</p>
+                </div>
+            </div>
+            <div class="container client-container">
+                <div class="row client-row-wrapper">
+                    <p class="client-test-desc">
+                        "Since the early 1990's I have worked at one hospital site or another that is serviced by
+                        NuTech, Inc. . Without exception, regardless of the pharmacy location, I've always been treated
+                        like a special customer."</p>
+                    <p class="client-italic">- Dale, St. Joseph Regional Health Center</p>
+                </div>
+            </div>
+            <div class="container client-container">
+                <div class="row client-row-wrapper">
+                    <p class="client-test-desc">
+                        "All of the NuTech, Inc. personnel have always been professional, courteous, and friendly during
+                        the 9 years we've been working with them. The times we have needed advice, questions answered,
+                        or just a helping hand with nuclear medicine, Randy and his staff have been more than happy to
+                        help. When called upon they've always gone the extra mile exemplifying their attitude and desire
+                        to be an integral part of our nuclear medicine team."</p>
+                    <p class="client-italic">- Ed and Lauren, Scott & White Clinic</p>
+                </div>
+            </div>
+            <div class="container client-container">
+                <div class="row client-row-wrapper">
+                    <p class="client-test-desc">
+                        "NuTech, Inc. offers outstanding service to our area. Their Pharmaceutical Department, as well
+                        as their office staff, are very helpful, friendly, and above all, very knowledgeable. We are
+                        pleased to have NuTech Inc.'s service available for our facility."
+                    </p>
+                    <p class="client-italic">- Lisa, St. Mark's Medical Center</p>
+                </div>
+            </div>
+            <div class="container client-container">
+                <div class="row client-row-wrapper">
+                    <p class="client-test-desc">
+                        "NuTech, Inc. is great. For years I used [another radiopharmacy] and I thought that they were
+                        unbeatable. I was wrong. Thank you NuTech, Inc. for all you do."
+                        <p class="client-italic">- George, Duncan Regional Hospital</p>
+                </div>
+            </div>
+            <div class="container client-container">
+                <div class="row client-row-wrapper">
+                    <p class="client-test-desc">
+                        "The guys at NuTech, Inc. are wonderful! They go above and beyond to make sure we are taken care
+                        of, and their customer service is exceptional. We have been very fortunate to work with such
+                        professional pharmacists!"
+                        <p class="client-italic">- Tasha, Valley View Regional Hospital</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+        <!-- Jason's Footer -->
         <footer id="footer" class="footer">
             <div class="container">
                 <div class="row">
                     <div class="footer-content-container col-sm-12">
                         <img class="footer-nutech-logo" src="./assets/svg/LOGOblutrans.svg" alt="NuTech Logo">
-                        <a class="footer-phone" href="tel:+19035928115">903.592.8115</a>
+                        <div class="footer-nutech-location-container">
+                            <div class="footer-location-inner">
+                                <p class="footer-location-header">Tyler, TX</p>
+                                <a class="footer-location-number" href="tel:+19035928115">903.592.8115</a>
+                            </div>
+                            <div class="footer-location-inner">
+                                <p class="footer-location-header">College Station, TX</p>
+                                <a class="footer-location-number" href="tel:+19792680513">979.268.0513</a>
+                            </div>
+                            <div class="footer-location-inner">
+                                <p class="footer-location-header">Wichita Falls, TX</p>
+                                <a class="footer-location-number" href="tel:+19407611110">940.761.1110</a>
+                            </div>
+
+                        </div>
                         <p class="footer-copyright">NuTech, Inc. &copy; All Rights Reserved. Powered by <a
                                 class="footer-span" href="https://www.huntingtondigitaloc.com">Huntington Digital.</a>
                     </div>
                 </div>
             </div>
         </footer>
+
+        <!-- Dependencies -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+        <script src="assets/js/index.js"></script>
 
 </body>
 
