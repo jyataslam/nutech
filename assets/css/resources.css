@@ -24,6 +24,7 @@
 .pharma-image-long {
     top: -80px;
     position: relative;
+    background-image: none;
 }
 
 @media only screen and (max-width: 414px) {
@@ -35,6 +36,8 @@
     }
 
     .pharma-image-long {
+        background-image: none;
+
         top: 0;
         position: relative;
     }
