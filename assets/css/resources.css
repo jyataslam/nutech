@@ -1,0 +1,46 @@
+.commish-photo-container {
+    padding-top: 2rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.commish-text-container {
+    order: none;
+    padding-top: 2rem;
+}
+
+.commish-photo-container {
+    order: none;
+}
+
+
+/* .container-fluid-resource-img {
+    padding-right: 0;
+    padding-left: 0;
+    margin-right: auto;
+} */
+
+.pharma-image-long {
+    top: -80px;
+    position: relative;
+}
+
+@media only screen and (max-width: 414px) {
+    .container-fluid-resource-img {
+        overflow: hidden;
+        padding-right: 0;
+        padding-left: 0;
+        margin-right: auto;
+    }
+
+    .pharma-image-long {
+        top: 0;
+        position: relative;
+    }
+
+    .commish-photo-container {
+        order: 0;
+    }
+
+}
