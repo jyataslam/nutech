@@ -16,7 +16,7 @@
   }
   
   a:link {
-    color:  #003da5;
+    /* color:  #003da5; */
     text-decoration: none;
   }
 
@@ -26,7 +26,7 @@
   }
   
   a:visited {
-    color:  #003da5;
+    /* color:  #003da5; */
     text-decoration: none;
   }
   
@@ -36,7 +36,7 @@
   }
   
   a:active {
-    color: #003da5;
+    /* color: #003da5; */
     text-decoration: none;
   }
 
@@ -52,6 +52,8 @@
 }
 
 .w3-bar .w3-button {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 400;
   margin-top: .6rem;
   color: #000;
   background: transparent;
@@ -68,7 +70,7 @@
   bottom: 0;
   left: 0;
   position: absolute;
-  height: 2px;
+  height: 1px;
   background: #000;
   width: 100%;
   transition: all .5s;
@@ -94,6 +96,8 @@
   
   body,h1,h2,h4,h5,h6,p,ul,td,th {font-family: "Lato", sans-serif;}
   body, html {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400;
     height: 100%;
     position: relative;
     color: rgb(38, 36, 36);
@@ -304,11 +308,23 @@
     overflow-x: hidden;
     transition: .5s ease-in-out;
   }
+
+  .w3-btn, .w3-button {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
+    padding: 16px;
+  }
   
   #myHeader {
     /* margin-top: 5%; */
     padding-top: 3%;
     width: 100%;
+  }
+
+  .sidenav-hr {
+    border-top: 1px solid #0000003b;
+    width: 70%;
+    margin: .5rem auto;
   }
 
   .h4-home {
@@ -573,14 +589,16 @@
 }
 
 .hero-creds-title {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 400;
   display: inline-block;
-  font-size: 1.5rem;
+  font-size: 1rem;
   padding-right: 1rem;
 }
 
 .hero-creds-img {
   display: inline-block;
-  height: 100px;
+  height: 70px;
 }
 
 .hero-row {
@@ -639,8 +657,11 @@
 
 
 .phone-number-location {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 500;
   margin: 0 auto;
   letter-spacing: .05rem;
+  font-size: 1.75rem;
 }
 
 .phone-number {
@@ -680,6 +701,8 @@
 }
 
 .about-us-header span {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 500;
   position: relative;
 }
 
@@ -764,11 +787,19 @@ letter-spacing: 0.1rem;
   padding-top: .5rem;
 }
 
+.footer-nutech-logo {
+  padding-bottom: 1rem;
+}
+
 .footer-copyright {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 400;
   font-size: .9rem;
 }
 
 a.footer-span {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 400;
   color: black;
   transition: color .4s;
 }
@@ -823,12 +854,14 @@ a.footer-span:hover {
 }
 
 .accordion-wrapper > ul > li > a {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 400;
 	color: #000;
 	display: block;
 	font-size: 1rem;
-    padding: 12px 10px;
-    text-decoration: none;
-    padding-right: 3rem;
+  padding: 12px 10px;
+  text-decoration: none;
+  padding-right: 3rem;
 }
 
 .accordion-wrapper ul ul li {
@@ -908,6 +941,8 @@ a.footer-span:hover {
 }
 
 .links-title {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 500;
   font-size: 1.7rem;
 }
 
@@ -916,13 +951,17 @@ a.footer-span:hover {
 }
 
 .commish-text {
-    font-size: 1rem;
-    line-height: 1.75;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.75;
 }
 
 .nnsa-text {
-    font-size: 1rem;
-    line-height: 1.75;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.75;
 }
 
 .commish-photo-container  {
@@ -933,6 +972,8 @@ a.footer-span:hover {
 }
 
 .commish-title {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 500;
   padding-bottom: 1rem;
   font-size: 1.7rem;
 }
@@ -1026,6 +1067,12 @@ a.footer-span:hover {
   height: 100%;
 }
 
+.pharma-image-long {
+  background-image: url(../images/microscope.jpg);
+  background-size: cover;
+  height: 250px;
+}
+
 .pharma-image-long img {
   width: 100%;
 }
@@ -1060,6 +1107,8 @@ a.footer-span:hover {
 }
 
 .pharma-header {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 500;
   text-align: center;
   padding-bottom: 1rem;
   margin-top: 0;
@@ -1067,9 +1116,12 @@ a.footer-span:hover {
 }
 
 .pharma-text {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 400;
   font-size: 1rem;
   line-height: 1.75;
   text-align: center;
+  color: #393939;
 }
 
 .doctor {
@@ -1080,6 +1132,26 @@ a.footer-span:hover {
   background-position: center;
 }
 
+.footer-nutech-location-container {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+.footer-location-inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: .8rem;
+}
+
+.footer-location-header {
+  margin-bottom: 0;
+  font-size: .9rem;
+}
 
 @media only screen and (max-width: 1024px){
     .nutech-hero-logo {
@@ -1217,9 +1289,11 @@ a.footer-span:hover {
 
     .links-title {
       font-size: 1rem;
+      display: none;
     }
 
     .link-icon {
+      display: none !important;
       font-size: 5rem;
     }
 
@@ -1284,7 +1358,8 @@ a.footer-span:hover {
     }
 
     .footer-copyright {
-      font-size: .7rem;
+      font-size: .6rem;
+      text-align: center;
     }
 
     .logo-image {
@@ -1302,6 +1377,7 @@ a.footer-span:hover {
     .pharma-text {
       font-size: .875rem;
       line-height: 1.75;
+      margin-bottom: 0;
     }
 
     .vertical-line {
@@ -1316,6 +1392,10 @@ a.footer-span:hover {
     .doctor {
       height: 170px;
       background-attachment: scroll;
+    }
+
+    .pharma-image-long {
+      height: 170px;
     }
 
     .about-us-video-container iframe {
@@ -1407,5 +1487,11 @@ video {
 
   .info {
     background-attachment: scroll;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-height: 815px){
+  .creds-container {
+    top: 0%;
   }
 }
