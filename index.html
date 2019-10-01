@@ -8,7 +8,7 @@
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3pro.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto|Quicksand:400,500,600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 <script src="https://kit.fontawesome.com/96a8611a1e.js"></script>
@@ -22,14 +22,15 @@
 
 <body>
 
-   
+
     <div class="w3-top">
         <div class="w3-bar myNavbar" id="myNavbar">
-            <a id="nav-btn" class="w3-bar-item w3-button w3-hover-black w3-hide-large w3-right" href="javascript:void(0);" title="Toggle Navigation Menu">
+            <a id="nav-btn" class="w3-bar-item w3-button w3-hover-black w3-hide-large w3-right"
+                href="javascript:void(0);" title="Toggle Navigation Menu">
                 <i class="fa fa-bars"></i>
             </a>
 
-            <a class="logo-image">
+            <a class="logo-image" href="./index.html">
                 <img src="assets/svg/LOGOblutrans.svg" class="img-fluid nutech-navbar-logo"></a>
             <a href="./resources.html" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-right">
                 Resources</a>
@@ -49,53 +50,46 @@
                 class="w3-bar-item w3-button w3-bar-item w3-button w3-hide-small w3-hide-medium w3-right">Home</a>
         </div>
 
-        <!-- Navbar on small screens -->
-        <!-- <div id="navDemo" class="w3-bar-block w3-light-grey w3-hide w3-hide-large">
-            <div class="sidenav-wrapper">
-                <a href="./index.html" class="w3-bar-item w3-button" onclick="toggleFunction()">Home</a>
-                <a href="./testimonials.html" class="w3-bar-item w3-button" onclick="toggleFunction()">Testimonials</a>
-                <a href="./company.html" class="w3-bar-item w3-button" onclick="toggleFunction()">Company</a>
-                <a href="./media.html" class="w3-bar-item w3-button" onclick="toggleFunction()">Media</a>
-                <a href="./team.html" class="w3-bar-item w3-button" onclick="toggleFunction()">Team</a>
-                <a href="./products.html" class="w3-bar-item w3-button" onclick="toggleFunction()">Products</a>
-                <a href="./services.html" class="w3-bar-item w3-button" onclick="toggleFunction()">Services</a>
-                <a href="./resources.html" class="w3-bar-item w3-button" onclick="toggleFunction()">Resources</a>
-            </div>
-        </div> -->
-
         <!-- Create Side Nav when open -->
-    <div id="nav-menu" class="nav-menu">
-        <div class="container">
-            <div class="row">
-                <ul class="nav-menu-list">
-                    <li class="nav-menu-list-item">
-                        <a href="./index.html" class="w3-bar-item w3-button" onclick="toggleFunction()">Home</a>
-                    </li>
-                    <li class="nav-menu-list-item">
-                        <a href="./testimonials.html" class="w3-bar-item w3-button" onclick="toggleFunction()">Testimonials</a>
-                    </li>
-                    <li class="nav-menu-list-item">
-                        <a href="./company.html" class="w3-bar-item w3-button" onclick="toggleFunction()">Company</a>
-                    </li>
-                    <li class="nav-menu-list-item">
-                        <a href="./media.html" class="w3-bar-item w3-button" onclick="toggleFunction()">Media</a>
-                    </li>
-                    <li class="nav-menu-list-item">
-                        <a href="./team.html" class="w3-bar-item w3-button" onclick="toggleFunction()">Team</a>
-                    </li>
-                    <li class="nav-menu-list-item">
-                        <a href="./products.html" class="w3-bar-item w3-button" onclick="toggleFunction()">Products</a>
-                    </li>
-                    <li class="nav-menu-list-item">
-                        <a href="./services.html" class="w3-bar-item w3-button" onclick="toggleFunction()">Services</a>
-                    </li>
-                    <li class="nav-menu-list-item">
-                        <a href="./resources.html" class="w3-bar-item w3-button" onclick="toggleFunction()">Resources</a>
-                    </li>
-                </ul>
+        <div id="nav-menu" class="nav-menu">
+            <div class="container">
+                <div class="row">
+                    <ul class="nav-menu-list">
+                        <li class="nav-menu-list-item">
+                            <a href="./index.html" class="w3-bar-item w3-button">Home</a>
+                        </li>
+                        <hr class="sidenav-hr">
+                        <li class="nav-menu-list-item">
+                            <a href="./testimonials.html" class="w3-bar-item w3-button">Testimonials</a>
+                        </li>
+                        <hr class="sidenav-hr">
+                        <li class="nav-menu-list-item">
+                            <a href="./company.html" class="w3-bar-item w3-button">Company</a>
+                        </li>
+                        <hr class="sidenav-hr">
+                        <li class="nav-menu-list-item">
+                            <a href="./media.html" class="w3-bar-item w3-button">Media</a>
+                        </li>
+                        <hr class="sidenav-hr">
+                        <li class="nav-menu-list-item">
+                            <a href="./team.html" class="w3-bar-item w3-button">Team</a>
+                        </li>
+                        <hr class="sidenav-hr">
+                        <li class="nav-menu-list-item">
+                            <a href="./products.html" class="w3-bar-item w3-button">Products</a>
+                        </li>
+                        <hr class="sidenav-hr">
+                        <li class="nav-menu-list-item">
+                            <a href="./services.html" class="w3-bar-item w3-button">Services</a>
+                        </li>
+                        <hr class="sidenav-hr">
+                        <li class="nav-menu-list-item">
+                            <a href="./resources.html" class="w3-bar-item w3-button">Resources</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
-    </div>
 
     </div>
 
@@ -139,7 +133,7 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="pharma-image-long col-sm-12">
-                        <img src="./assets/images/pharmacist.jpg" alt="pharmacist with medicine">
+                        <!-- <img src="./assets/images/microscope.jpg" alt="pharmacist with medicine"> -->
                     </div>
                 </div>
             </div>
@@ -158,7 +152,7 @@
                         Texas, North Central
                         Texas, and Southern Oklahoma.<br>
                         Visit our <a href="testimonials.html" target="_blank">testimonials</a> page to read
-                        what Our Customers
+                        what our customers
                         have to
                         say about NuTech, Inc.</p>
                 </div>
@@ -404,7 +398,21 @@
                 <div class="row">
                     <div class="footer-content-container col-sm-12">
                         <img class="footer-nutech-logo" src="./assets/svg/LOGOblutrans.svg" alt="NuTech Logo">
-                        <a class="footer-phone" href="tel:+19035928115">903.592.8115</a>
+                        <div class="footer-nutech-location-container">
+                            <div class="footer-location-inner">
+                                <p class="footer-location-header">Tyler, TX</p>
+                                <a class="footer-location-number" href="tel:+19035928115">903.592.8115</a>
+                            </div>
+                            <div class="footer-location-inner">
+                                <p class="footer-location-header">College Station, TX</p>
+                                <a class="footer-location-number" href="tel:+19792680513">979.268.0513</a>
+                            </div>
+                            <div class="footer-location-inner">
+                                <p class="footer-location-header">Wichita Falls, TX</p>
+                                <a class="footer-location-number" href="tel:+19407611110">940.761.1110</a>
+                            </div>
+
+                        </div>
                         <p class="footer-copyright">NuTech, Inc. &copy; All Rights Reserved. Powered by <a
                                 class="footer-span" href="https://www.huntingtondigitaloc.com">Huntington Digital.</a>
                     </div>
