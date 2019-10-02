@@ -7,11 +7,13 @@
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3pro.css">
+<link href="https://fonts.googleapis.com/css?family=Roboto%7CQuicksand:400,500,600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 <link rel="stylesheet" type="text/css" href="assets/css/resources.css">
+<link rel="stylesheet" href="./assets/css/testimonials.css" type="text/css">
 
 <script src="https://kit.fontawesome.com/96a8611a1e.js"></script>
 
@@ -26,7 +28,7 @@
 <body>
 
     <!-- Navbar (sit on top) -->
-    <div class="w3-top">
+    <div class="w3-top other-navbar">
         <div class="w3-bar myNavbar" id="myNavbar">
             <a id="nav-btn" class="w3-bar-item w3-button w3-hover-black w3-hide-large w3-right"
                 href="javascript:void(0);" title="Toggle Navigation Menu">
@@ -95,17 +97,18 @@
 
     
     <!-- Background Image -->
-    <section id="info" class="info">
-            <div class="container-fluid container-fluid-resource-img">
-                    <div class="row">
-                        <div class="pharma-image-long col-sm-12">
-                        </div>
-                    </div>
+    <section id="background" class="background">
+        <div id="landing-top" class="landing-top"></div>
+        
+        <div id="testimonials" class="testimonials">
+            <div class="container">
+                <div class="row test-row">
+                    <h1 class="col-sm-12 test-header1">Links & Resources</h1>
                 </div>
+            
 
         <div class="container">
             <div class="row">
-                <h1 class="col-sm-12 about-us-header info-header"><span>Links & Resources</span></h1>
                 <div class="quick-links-container col-sm-12 col-md-12">
                     <div class="quick-links-title">
                         <h1 class="links-title">Calculators and Patient Information</h1>
@@ -313,7 +316,7 @@
                 </div>
             </div>
         </footer>
-
+    </section>
         <!-- Dependencies -->
         <script src="https://code.jquery.com/jquery-3.4.1.min.js"
             integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
