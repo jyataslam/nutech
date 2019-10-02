@@ -2,7 +2,7 @@
 .landing-top {
     height: 42vh;
     width: 100%;
-    background: url(../images/pharmacist.jpg);
+    background: url(../images/microscope.jpg);
     background-size: cover;
 }
 
@@ -82,6 +82,7 @@
 @media only screen and (max-width: 1024px){
     .landing-top {
         background-position-x: 45%;
+        height: 30vh;
     }
 }
 
