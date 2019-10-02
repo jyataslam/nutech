@@ -1,0 +1,94 @@
+
+.media {
+    padding: 50px 0 ;
+}
+
+.media-photo-container1 {
+    background: url(../images/dannysaturn.jpg);
+    height: 500px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-bottom: 4rem;
+}
+
+.media-photo-container2 {
+    background: url(../images/Saturn.jpg);
+    height: 500px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-bottom: 4rem;
+}
+
+.company-subheader {
+    padding-bottom: 2rem;
+}
+
+.media-video-container {
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.media-video {
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+/* ----------------------- */
+/* MEDIA QUERIES ARE FUN!! */
+/* ----------------------- */
+
+@media only screen and (max-width: 1200px){
+    .landing-top {
+        background-position-x: 39%;
+    }
+}
+
+/* 1024px */
+@media only screen and (max-width: 1024px){
+    .landing-top {
+        background-position-x: 45%;
+        height: 30vh;
+    }
+}
+
+@media only screen and (max-width: 414px){
+    .company-header {
+        font-size: 1.75rem;
+    }
+
+    .company-desc {
+        font-size: 1rem;
+    }
+
+    .company-subheader {
+        font-weight: 400;
+        font-size: 1.25rem;
+    }
+
+    .company-subdesc {
+        font-size: .875rem;
+    }
+
+    .horizontal-line {
+        margin: 0 auto 2rem;
+    }
+
+    .media-photo-container1 {
+        margin-bottom: 1rem;
+    }
+
+    .media-photo-container2 {
+        height: 540px;
+        margin-bottom: 3rem;
+    }
+
+    .media-video-container {
+        height: 215px;
+    }
+}
