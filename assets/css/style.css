@@ -1385,6 +1385,23 @@ a.footer-span:hover {
       margin: .5rem auto;
     }
 
+    .footer-location-number {
+      color: inherit;
+    }
+
+    .footer-location-number:active {
+      color: inherit;
+    }
+
+    .footer-location-number:visited {
+      color: inherit;
+    }
+
+    .horizontal-line {
+      width: 75%;
+      margin: 2.5rem auto;
+  }
+
     .about-us-video-container {
       height: auto;
     }
