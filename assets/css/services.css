@@ -3,6 +3,10 @@
     font-size:1.2rem;
 }
 
+.commish-text-container {
+    padding-top: 3rem;
+}
+
 @media only screen and (max-width: 414px) {
     .about-us-header {
         font-size: 1.5rem;

@@ -3,7 +3,7 @@ h1.commish-title {
 }
 
 section#info {
-    padding-top: 0;
+    padding-top: 3rem;
 }
 
 .commish-text-container ul li{
@@ -16,7 +16,7 @@ section#info {
 
 @media only screen and (max-width: 414px){
     section#info {
-        padding-top: 0;
+        padding-top: 3rem;
     }
 
     .commish-text-container {
