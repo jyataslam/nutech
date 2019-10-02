@@ -607,10 +607,18 @@
 
 .nutech-hero-logo {
   margin: 0 auto;
-  width: 1000px;
+  width: 850px;
   padding-bottom: 3rem;
   position: relative;
   bottom: 3rem;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 1.5s ease-in-out;
+}
+
+.loaded {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .nutech-hero-tagline {

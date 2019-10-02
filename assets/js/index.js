@@ -1,6 +1,8 @@
 /* Change style of navbar on scroll */
 
 $(document).ready(function () {
+	$('.nutech-hero-logo').addClass('loaded');
+
 	document.getElementById('nav-btn').addEventListener('click', handleNavAnimationClick);
 
 	$('.accordion-wrapper > ul > li:has(ul)').addClass("accordion-content");
@@ -30,7 +32,7 @@ $(document).ready(function () {
 });
 
 // Hide Sidenav on Body click
-$('#background, #main').click(() => handleBodyClick());
+$('#background, .background').click(() => handleBodyClick());
 
 handleBodyClick = () => {
 	$(navBtn).removeClass('on');
