@@ -29,6 +29,16 @@ $(document).ready(function () {
     });
 });
 
+// Hide Sidenav on Body click
+$('#background, #main').click(() => handleBodyClick());
+
+handleBodyClick = () => {
+	$(navBtn).removeClass('on');
+    $(sidenav).removeClass('sidenav-transform-x');
+    $(main).removeClass('main-transform-x');
+    $(body).removeClass('no-scroll');
+}
+
 
 $(window).scroll( () => navScroll() );
 
