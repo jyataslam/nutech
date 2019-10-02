@@ -26,10 +26,13 @@
     font-family: inherit;
     margin: 0 auto;
     padding-bottom: 1rem;
+    text-align: center;
 }
 
 .test-desc {
     font-family: inherit;
+    text-align: center;
+    padding-bottom: 3rem;
 }
 
 .client-container {
@@ -44,11 +47,44 @@
 .client-test-desc {
     margin: 0 auto;
     font-family: inherit;
-    text-align: center;
+    text-align: left;
+    font-size: .875rem;
 }
 
 .client-italic {
     font-family: inherit;
     text-align: right;
     font-style: italic;
+    font-size: .875rem;
+}
+
+
+
+
+
+/* ----------------------- */
+/* MEDIA QUERIES ARE FUN!! */
+/* ----------------------- */
+
+/* 1024px */
+@media only screen and (max-width: 1024px){
+    .landing-top {
+        background-position-x: 45%;
+    }
+}
+
+/* 414px */
+@media only screen and (max-width: 414px){
+    .test-header {
+        font-size: 1.75rem;
+    }
+    
+    .test-desc {
+        padding-bottom: 2rem;
+        font-size: 1rem;
+    }
+
+    .horizontal-line {
+        margin: 1rem auto 2rem;
+    }
 }
