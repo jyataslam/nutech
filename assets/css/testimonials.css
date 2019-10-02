@@ -4,10 +4,12 @@
     width: 100%;
     background: url(../images/microscope.jpg);
     background-size: cover;
+    -webkit-filter: brightness(.2);
+    filter: brightness(.2);
 }
 
 .other-navbar {
-    background: #ffffffb3;
+    background: #fff;
 }
 
 #testimonials {
@@ -25,8 +27,20 @@
 .test-header {
     font-family: inherit;
     margin: 0 auto;
-    padding-bottom: 1rem;
     text-align: center;
+    margin-top: -12rem;
+    color: #fff;
+    font-size: 3.5rem;
+}
+
+.test-header1 {
+    font-family: inherit;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: -12rem;
+    color: #fff;
+    font-size: 3.5rem;
+    margin-bottom: 7rem;
 }
 
 .test-desc {
@@ -82,8 +96,17 @@
 
 /* 414px */
 @media only screen and (max-width: 414px){
+    .testimonials {
+        padding: 30px 0;
+    }
     .test-header {
         font-size: 1.75rem;
+    }
+
+    .test-header1 {
+        font-size: 2rem;
+        margin-top: -10rem;
+        margin-bottom: 6rem;
     }
     
     .test-desc {
@@ -101,5 +124,12 @@
 
     .horizontal-line {
         margin: 1rem auto 2rem;
+    }
+}
+
+@media only screen and (max-width: 375px){
+    .test-header1 {
+        margin-top: -11rem;
+        margin-bottom: 7rem;
     }
 }
