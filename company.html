@@ -1,20 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-<title>NuTech Company</title>
+<title>NuTech, Inc</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3pro.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto|Quicksand:400,500,600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+<link rel="stylesheet" href="./assets/css/company.css" type="text/css">
 <script src="https://kit.fontawesome.com/96a8611a1e.js"></script>
 
-<script src="assets/js/index.js"></script>
 
 <!-- #BeginEditable "keywords" -->
 <meta name="keywords"
@@ -25,16 +24,14 @@
 
 <body>
 
-    <!-- Navbar (sit on top) -->
-    <div class="w3-top">
-        <div class="w3-bar myNavbar navbar-other-pages" id="myNavbar">
-            <a class="w3-bar-item w3-button w3-hover-black w3-hide-large w3-right" href="javascript:void(0);"
-                onclick="toggleFunction()" title="Toggle Navigation Menu">
+    <div class="w3-top other-navbar">
+        <div class="w3-bar myNavbar" id="myNavbar">
+            <a id="nav-btn" class="w3-bar-item w3-button w3-hover-black w3-hide-large w3-right"
+                href="javascript:void(0);" title="Toggle Navigation Menu">
                 <i class="fa fa-bars"></i>
             </a>
 
-            <!-- Logo -->
-            <a class="logo-image">
+            <a class="logo-image" href="./index.html">
                 <img src="assets/svg/LOGOblutrans.svg" class="img-fluid nutech-navbar-logo"></a>
             <a href="./resources.html" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-right">
                 Resources</a>
@@ -54,22 +51,176 @@
                 class="w3-bar-item w3-button w3-bar-item w3-button w3-hide-small w3-hide-medium w3-right">Home</a>
         </div>
 
-        <!-- Navbar on small screens -->
-        <div id="navDemo" class="w3-bar-block w3-light-grey w3-hide w3-hide-large">
-            <a href="./index.html" class="w3-bar-item w3-button" onclick="toggleFunction()">Home</a>
-            <a href="./testimonials.html" class="w3-bar-item w3-button" onclick="toggleFunction()">Testimonials</a>
-            <a href="./company.html" class="w3-bar-item w3-button" onclick="toggleFunction()">Company</a>
-            <a href="./media.html" class="w3-bar-item w3-button" onclick="toggleFunction()">Media</a>
-            <a href="./team.html" class="w3-bar-item w3-button" onclick="toggleFunction()">Team</a>
-            <a href="./products.html" class="w3-bar-item w3-button" onclick="toggleFunction()">Products</a>
-            <a href="./services.html" class="w3-bar-item w3-button" onclick="toggleFunction()">Services</a>
-            <a href="./resources.html" class="w3-bar-item w3-button" onclick="toggleFunction()">Resources</a>
+        <!-- Create Side Nav when open -->
+        <div id="nav-menu" class="nav-menu">
+            <div class="container">
+                <div class="row">
+                    <ul class="nav-menu-list">
+                        <li class="nav-menu-list-item">
+                            <a href="./index.html" class="w3-bar-item w3-button">Home</a>
+                        </li>
+                        <hr class="sidenav-hr">
+                        <li class="nav-menu-list-item">
+                            <a href="./testimonials.html" class="w3-bar-item w3-button">Testimonials</a>
+                        </li>
+                        <hr class="sidenav-hr">
+                        <li class="nav-menu-list-item">
+                            <a href="./company.html" class="w3-bar-item w3-button">Company</a>
+                        </li>
+                        <hr class="sidenav-hr">
+                        <li class="nav-menu-list-item">
+                            <a href="./media.html" class="w3-bar-item w3-button">Media</a>
+                        </li>
+                        <hr class="sidenav-hr">
+                        <li class="nav-menu-list-item">
+                            <a href="./team.html" class="w3-bar-item w3-button">Team</a>
+                        </li>
+                        <hr class="sidenav-hr">
+                        <li class="nav-menu-list-item">
+                            <a href="./products.html" class="w3-bar-item w3-button">Products</a>
+                        </li>
+                        <hr class="sidenav-hr">
+                        <li class="nav-menu-list-item">
+                            <a href="./services.html" class="w3-bar-item w3-button">Services</a>
+                        </li>
+                        <hr class="sidenav-hr">
+                        <li class="nav-menu-list-item">
+                            <a href="./resources.html" class="w3-bar-item w3-button">Resources</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
+
     </div>
 
     <!-- Background -->
-    <div class="background">
-        <div class="bgimg-1 w3-display-container w3-padding-64">
+    <section id="background" class="background">
+        <div id="landing-top" class="landing-top"></div>
+        <section id="company" class="company">
+            <div class="container">
+                <div class="row">
+                    <h1 class="col-sm-12 company-header">Learn About NuTech, Inc.</h1>
+                    <p class="col-sm-12 company-desc">NuTech, Inc. is an independently owned, commercial nuclear
+                        pharmacy corporation
+                        operating class B (nuclear) pharmacies in Tyler, College Station and Wichita
+                        Falls, Texas. From these three state of the art facilities, NuTech, Inc. serves most of East and
+                        North Central Texas and Southern Oklahoma. NuTech, Inc. corporate headquarters are located in
+                        beautiful
+                        Tyler, Texas, "America's Rose Capital".</p>
+                </div>
+                <hr class="horizontal-line">
+                <div class="row">
+                    <h1 class="col-sm-12 company-subheader">Our Company</h1>
+                    <p class="col-sm-12 company-subdesc">NuTech, Inc. is a service-oriented healthcare business centered
+                        on
+                        offering 24 hour, 365 day a year preparation and delivery of unit-dose
+                        radioactive drugs for use in hospitals and freestanding clinics. Products and
+                        services provided include diagnostic radiopharmaceuticals, therapeutic
+                        radiopharmaceuticals, and non-radioactive and interventional agents used in
+                        conjunction with radiopharmaceuticals. The Company also provides radioactive
+                        sources used for calibration and quality control of nuclear imaging equipment,
+                        related nuclear medicine equipment and supplies. Physician continuing education
+                        programs, D.O.T. HAZMAT training, technical research and reporting, and RAM
+                        license consulting services are also available. NuTech, Inc. is staffed by
+                        fourteen
+                        nuclear pharmacists, most of whom are Board Certified, and a support staff
+                        consisting of Certified Pharmacy Technicians, office personnel, couriers, and
+                        quality control technicians.</p>
+                </div>
+                <div class="row company-video-row">
+                </div>
+                <div class="row company-row">
+                    <h1 class="col-sm-12 company-subheader">Our Mission</h1>
+                    <p class="col-sm-12 company-subdesc">The mission of NuTech, Inc. is to provide the highest quality
+                        nuclear
+                        pharmacy services defined as and evaluated by total customer
+                        satisfaction. This
+                        is achieved by employing motivated, well-trained employees working in a
+                        safe,
+                        professional, state-of-the-art environment that encourages and
+                        acknowledges
+                        excellence and pride in individual job and company performance.
+                        NuTech, Inc.
+                        will
+                        maintain and improve company viability by striving to continually
+                        improve our
+                        customer service, expanding our market share by making current services
+                        available to new customers, and seeking new service opportunities.<br>
+                        Each employee of NuTech, Inc. is encouraged to participate in the
+                        accomplishments
+                        of
+                        the Company by making a commitment to initial and continuing training
+                        and
+                        education, and to excellence and continued improvement in job
+                        performance. In
+                        return, NuTech, Inc. will provide a comfortable work environment
+                        that
+                        respects
+                        the
+                        individual, fosters teamwork, encourages initiative and creative
+                        thinking, and
+                        acknowledges superior performance of job duties.</p>
+                </div>
+                <hr class="company-vertical-line">
+                <div class="row company-row">
+                    <h1 class="col-sm-12 company-subheader">A Brief History</h1>
+                    <p class="col-sm-12 company-subdesc">Danny Allen founded NuTech, Inc. in 1989. Danny, a 1980
+                        graduate of
+                        the
+                        University of
+                        Houston College of Pharmacy, recognized an opportunity to fill a vital need
+                        in
+                        the East Texas healthcare marketplace while working for a national nuclear
+                        pharmacy chain in the Dallas/Fort Worth Metroplex area. With commitments
+                        from a
+                        few hospitals in the Tyler/Longview area, he and his wife, Georganne, opened
+                        the
+                        business in a small, leased space in an office building, and delivered the
+                        first
+                        radiopharmaceutical doses in August of 1989. Since then, the company has
+                        grown
+                        steadily, adding additional pharmacists and support personnel, and moving
+                        into a
+                        new, state-of-the-art building in 1993.<br>
+                        NuTech Inc.'s service area expanded in April of 1999 when Danny
+                        opened a new
+                        pharmacy
+                        in College Station, Texas, home of Texas A&M University. NuTech, Inc.
+
+                        expanded
+                        again
+                        in 2005 with the opening of our Wichita Falls, Texas pharmacy. From these
+                        three
+                        pharmacies, NuTech, Inc. serves most of East Texas, North Central
+                        Texas and
+                        Southern
+                        Oklahoma.
+                    </p>
+                </div>
+                <hr class="company-vertical-line">
+                <div class="row company-row">
+                    <h1 class="col-sm-12 company-subheader">Our Commitment</h1>
+                    <p class="col-sm-12 company-subdesc">Today, NuTech, Inc. is proud of its record of superior customer
+                        service,
+                        professionalism, and safety, and grateful for the loyalty shown by its
+                        customers. NuTech, Inc. is committed to continuing and improving
+                        upon these
+                        qualities
+                        which have allowed for its success, and to continuing to offer its customers
+                        the
+                        very best in radiopharmaceuticals and related nuclear pharmacy products and
+                        services.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+        <!-- <div class="bgimg-1 w3-display-container w3-padding-64">
             <div class="h4-home w3-hide-small"><i>NuTech, Inc. </i> is an independently owned, commercial nuclear
                 pharmacy corporation
                 operating class B (nuclear) pharmacies in Tyler, College Station and Wichita
@@ -97,12 +248,12 @@
                                     nuclear pharmacists, most of whom are Board Certified, and a support staff
                                     consisting of Certified Pharmacy Technicians, office personnel, couriers, and
                                     quality control technicians.</p>
-                                <!-- <div class="embed-responsive embed-responsive-16by9">
+                                <div class="embed-responsive embed-responsive-16by9">
                                     <iframe class="embed-responsive-item"
                                         src="https://www.youtube.com/embed/_KYyDuyhxS8" frameborder="0"
                                         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                                         allowfullscreen></iframe>
-                                </div> -->
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -194,22 +345,43 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
 
 
-        <!-- Footer -->
+        <!-- Jason's Footer -->
         <footer id="footer" class="footer">
             <div class="container">
                 <div class="row">
                     <div class="footer-content-container col-sm-12">
                         <img class="footer-nutech-logo" src="./assets/svg/LOGOblutrans.svg" alt="NuTech Logo">
-                        <a class="footer-phone" href="tel:+19035928115">903.592.8115</a>
+                        <div class="footer-nutech-location-container">
+                            <div class="footer-location-inner">
+                                <p class="footer-location-header">Tyler, TX</p>
+                                <a class="footer-location-number" href="tel:+19035928115">903.592.8115</a>
+                            </div>
+                            <div class="footer-location-inner">
+                                <p class="footer-location-header">College Station, TX</p>
+                                <a class="footer-location-number" href="tel:+19792680513">979.268.0513</a>
+                            </div>
+                            <div class="footer-location-inner">
+                                <p class="footer-location-header">Wichita Falls, TX</p>
+                                <a class="footer-location-number" href="tel:+19407611110">940.761.1110</a>
+                            </div>
+
+                        </div>
                         <p class="footer-copyright">NuTech, Inc. &copy; All Rights Reserved. Powered by <a
                                 class="footer-span" href="https://www.huntingtondigitaloc.com">Huntington Digital.</a>
                     </div>
                 </div>
             </div>
         </footer>
+    </section>
+
+    <!-- Dependencies -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+    <script src="assets/js/index.js"></script>
 
 </body>
 
