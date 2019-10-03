@@ -1,0 +1,39 @@
+
+.calc-header {
+    margin-top: -8rem;
+}
+
+.w3-row-padding {
+    padding-top: 0;
+}
+
+.w3-card-resources {
+    box-shadow: none;
+    min-height: initial;
+    padding: 1rem;
+    margin-top: -1rem;
+}
+
+.w3-card-resources h3 {
+    font-family: inherit;
+    font-weight: 500;
+}
+
+.select-button:hover {
+    cursor: pointer;
+}
+
+.select-button option {
+    text-align: center;
+}
+
+.radcalc-td {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input {
+    border: 1px solid lightgrey;
+}
+
