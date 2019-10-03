@@ -383,7 +383,6 @@
   
   #page-container {
       position: relative;
-      min-height: 150vh;
       padding-bottom: 10vh;
   }
   
@@ -1138,6 +1137,11 @@ a.footer-span:hover {
   line-height: 1.75;
   text-align: center;
   color: #393939;
+}
+
+.sidenav-logo {
+  width: 70%;
+  margin: 1rem 0;
 }
 
 .doctor {
