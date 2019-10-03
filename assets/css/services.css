@@ -7,6 +7,24 @@
     padding-top: 3rem;
 }
 
+* {
+    font-family:  'Quicksand', sans-serif !important;
+}
+
+.test-header1{
+    font-family: 'Fjalla One', sans-serif !important;
+}
+
+.footer-location-number { 
+    color:  #003da5;
+    text-decoration: none;
+}
+
+.footer-location-header {
+    font-family: 'Lato', sans-serif !important;
+}
+
+
 @media only screen and (max-width: 414px) {
     .about-us-header {
         font-size: 1.5rem;

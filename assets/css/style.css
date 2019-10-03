@@ -95,6 +95,7 @@
     --------------------- */
   
   body,h1,h2,h4,h5,h6,p,ul,td,th {font-family: "Lato", sans-serif;}
+  
   body, html {
     font-family: 'Quicksand', sans-serif;
     font-weight: 400;
@@ -178,6 +179,11 @@
     flex-flow: row wrap;
     align-items: stretch;
   }
+
+  .footer-location-number { 
+    color:  #003da5;
+    text-decoration: none;
+}
 
   @media(min-width:768px) {
     /* .w3-row-padding {
