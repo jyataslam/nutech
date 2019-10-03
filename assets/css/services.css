@@ -4,15 +4,38 @@
 }
 
 .commish-text-container {
-    padding-top: 3rem;
+    padding-top: 2rem;
 }
 
-* {
-    font-family:  'Quicksand', sans-serif !important;
+.p-top4rem {
+    padding-top: 4rem;
+}
+
+.commish-text-container > p {
+    font-family: inherit;
+    font-size: 1rem;
+}
+
+.commish-text-container ul li {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1rem;
+}
+
+.services-award-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.services-award-photo {
+    height: 155px;
+    padding: 2px;
+    border: 1px solid grey;
+    margin: 15px 0;
 }
 
 .test-header1{
-    font-family: 'Fjalla One', sans-serif !important;
+    font-family: 'Fjalla One', sans-serif;
 }
 
 .footer-location-number { 
@@ -25,10 +48,20 @@
 }
 
 
+@media only screen and (max-width: 768px){
+    .services-award-photo {
+        height: 118px;
+    }
+}
+
 @media only screen and (max-width: 414px) {
     .about-us-header {
         font-size: 1.5rem;
         padding-bottom: 1rem;
         margin-top: 2rem;
+    }
+
+    .services-award-photo {
+        height: 133px;
     }
 }
