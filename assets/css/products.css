@@ -2,6 +2,10 @@ h1.commish-title {
     text-align: center;
 }
 
+/* *{
+    font-family:  'Quicksand', sans-serif;
+} */
+
 section#info {
     padding-top: 3rem;
 }
@@ -13,6 +17,16 @@ section#info {
 .commish-photo-container.col-sm-12.col-md-12 {
     padding-top: 0;
 }
+
+.footer-location-number { 
+        color:  #003da5;
+        text-decoration: none;
+}
+
+.footer-location-header {
+    font-family: 'Lato', sans-serif !important;
+}
+
 
 @media only screen and (max-width: 414px){
     section#info {
