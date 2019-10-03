@@ -7,18 +7,18 @@
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3pro.css">
-<link href="https://fonts.googleapis.com/css?family=Roboto%7CQuicksand:400,500,600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto|Quicksand:400,500,600|Fjalla+One&display=swap"
+    rel="stylesheet">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+<link rel="stylesheet" href="./assets/css/company.css" type="text/css">
 <link rel="stylesheet" type="text/css" href="assets/css/services.css">
 <link rel="stylesheet" type="text/css" href="assets/css/products.css">
 <script src="https://kit.fontawesome.com/96a8611a1e.js"></script>
 <link rel="stylesheet" href="./assets/css/testimonials.css" type="text/css">
 
-
-<script src="assets/js/index.js"></script>
 
 <!-- #BeginEditable "keywords" -->
 <meta name="keywords"
@@ -29,16 +29,14 @@
 
 <body>
 
-    <!-- Navbar (sit on top) -->
-    <div class="w3-top">
-        <div class="w3-bar myNavbar navbar-other-pages" id="myNavbar">
-            <a class="w3-bar-item w3-button w3-hover-black w3-hide-large w3-right" href="javascript:void(0);"
-                onclick="toggleFunction()" title="Toggle Navigation Menu">
+    <div class="w3-top other-navbar">
+        <div class="w3-bar myNavbar" id="myNavbar">
+            <a id="nav-btn" class="w3-bar-item w3-button w3-hover-black w3-hide-large w3-right"
+                href="javascript:void(0);" title="Toggle Navigation Menu">
                 <i class="fa fa-bars"></i>
             </a>
 
-            <!-- Logo -->
-            <a class="logo-image">
+            <a class="logo-image" href="./index.html">
                 <img src="assets/svg/LOGOblutrans.svg" class="img-fluid nutech-navbar-logo"></a>
             <a href="./resources.html" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-right">
                 Resources</a>
@@ -58,24 +56,54 @@
                 class="w3-bar-item w3-button w3-bar-item w3-button w3-hide-small w3-hide-medium w3-right">Home</a>
         </div>
 
-        <!-- Navbar on small screens -->
-        <div id="navDemo" class="w3-bar-block w3-light-grey w3-hide w3-hide-large">
-            <a href="./index.html" class="w3-bar-item w3-button" onclick="toggleFunction()">Home</a>
-            <a href="./testimonials.html" class="w3-bar-item w3-button" onclick="toggleFunction()">Testimonials</a>
-            <a href="./company.html" class="w3-bar-item w3-button" onclick="toggleFunction()">Company</a>
-            <a href="./media.html" class="w3-bar-item w3-button" onclick="toggleFunction()">Media</a>
-            <a href="./team.html" class="w3-bar-item w3-button" onclick="toggleFunction()">Team</a>
-            <a href="./products.html" class="w3-bar-item w3-button" onclick="toggleFunction()">Products</a>
-            <a href="./services.html" class="w3-bar-item w3-button" onclick="toggleFunction()">Services</a>
-            <a href="./resources.html" class="w3-bar-item w3-button" onclick="toggleFunction()">Resources</a>
+        <!-- Create Side Nav when open -->
+        <div id="nav-menu" class="nav-menu">
+            <div class="container">
+                <div class="row">
+                    <ul class="nav-menu-list">
+                        <li class="nav-menu-list-item">
+                            <a href="./index.html" class="w3-bar-item w3-button">Home</a>
+                        </li>
+                        <hr class="sidenav-hr">
+                        <li class="nav-menu-list-item">
+                            <a href="./testimonials.html" class="w3-bar-item w3-button">Testimonials</a>
+                        </li>
+                        <hr class="sidenav-hr">
+                        <li class="nav-menu-list-item">
+                            <a href="./company.html" class="w3-bar-item w3-button">Company</a>
+                        </li>
+                        <hr class="sidenav-hr">
+                        <li class="nav-menu-list-item">
+                            <a href="./media.html" class="w3-bar-item w3-button">Media</a>
+                        </li>
+                        <hr class="sidenav-hr">
+                        <li class="nav-menu-list-item">
+                            <a href="./team.html" class="w3-bar-item w3-button">Team</a>
+                        </li>
+                        <hr class="sidenav-hr">
+                        <li class="nav-menu-list-item">
+                            <a href="./products.html" class="w3-bar-item w3-button">Products</a>
+                        </li>
+                        <hr class="sidenav-hr">
+                        <li class="nav-menu-list-item">
+                            <a href="./services.html" class="w3-bar-item w3-button">Services</a>
+                        </li>
+                        <hr class="sidenav-hr">
+                        <li class="nav-menu-list-item">
+                            <a href="./resources.html" class="w3-bar-item w3-button">Resources</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
+
     </div>
 
     <!-- Background Image -->
 
     <section id="background" class="background">
         <div id="landing-top" class="landing-top"></div>
-        
+
         <div id="testimonials" class="testimonials">
             <div class="container">
                 <div class="row test-row">
@@ -84,137 +112,160 @@
                         available
                         on the market. Please click </p>
                 </div>
-            
-    <section id="info" class="info">
-        <div class="container">
-            <div class="row">
+
+                <section id="info" class="info">
+                    <div class="container">
+                        <div class="row">
 
 
-                <div class="quick-links-container col-sm-12 col-md-12">
-                        <div class="commish-photo-container col-sm-12 col-md-12">
-                                <h1 class="commish-title">Tc-99m Unit Dose Radiopharmaceuticals</h1>
+                            <div class="quick-links-container col-sm-12 col-md-12">
+                                <div class="commish-photo-container col-sm-12 col-md-12">
+                                    <h1 class="commish-title">Tc-99m Unit Dose Radiopharmaceuticals</h1>
+                                    <img src="assets/images/GoldSeal_transparent.gif"
+                                        alt="Joint Commission Accreditation" class="commish-photo">
+                                </div>
+                            </div>
+                            <div class="commish-text-container col-sm-4 col-md-3 firstList">
+                                <ul>
+                                    <li>Albumin Aggregated (MAA)</li>
+                                    <li>Bicisate (Neurolite)</li>
+                                    <li>Exametazimne (Ceretec)</li>
+                                    <li>Exametazimne (Ceretec) Labeled White Blood Cells</li>
+                                </ul>
+                            </div>
+                            <div class="commish-text-container col-sm-3 col-md-3">
+                                <ul>
+                                    <li>Mebrofenin (Choletec)</li>
+                                    <li>Medronate (MDP)</li>
+                                    <li>Mertiatide (Technescan MAG-3)</li>
+                                    <li>Oxidronate (HDP)</li>
+
+                                </ul>
+                            </div>
+                            <div class="commish-text-container col-sm-3 col-md-3">
+                                <ul>
+                                    <li>Pentetate (DTPA)</li>
+                                    <li>Pyrophosphate (PYP)</li>
+                                    <li>Sestamibi</li>
+                                    <li>Sodium Pertechnetate</li>
+
+                                </ul>
+                            </div>
+                            <div class="commish-text-container col-sm-3 col-md-3">
+                                <ul>
+                                    <li>Succimer (DMSA)</li>
+                                    <li>Sulfur Colloid</li>
+                                    <li>Tetrofosmin (Myoview)</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="commish-photo-container col-sm-12 col-md-12">
+                                <h1 class="commish-title">Regulatory Affairs</h1>
                                 <img src="assets/images/GoldSeal_transparent.gif" alt="Joint Commission Accreditation"
                                     class="commish-photo">
                             </div>
-                </div>
-                <div class="commish-text-container col-sm-4 col-md-3 firstList">
-                    <ul>
-                        <li>Albumin Aggregated (MAA)</li>
-                        <li>Bicisate (Neurolite)</li>
-                        <li>Exametazimne (Ceretec)</li>
-                        <li>Exametazimne (Ceretec) Labeled White Blood Cells</li>
-                    </ul>
-                </div>
-                <div class="commish-text-container col-sm-3 col-md-3">
-                    <ul>
-                        <li>Mebrofenin (Choletec)</li>
-                        <li>Medronate (MDP)</li>
-                        <li>Mertiatide (Technescan MAG-3)</li>
-                        <li>Oxidronate (HDP)</li>
+                            <div class="commish-text-container col-sm-4 col-md-3 firstList">
+                                <ul>
+                                    <li>Carbon-14 Urea (PYtest Kit)</li>
+                                    <li>Capromab pendetide (Prostascint)</li>
+                                    <li>F-18 Fluorodeoxyglucose</li>
+                                    <li>Gallium-67</li>
+                                    <li>Indium-111 DTPA</li>
+                                </ul>
+                            </div>
+                            <div class="commish-text-container col-sm-3 col-md-3">
+                                <ul>
+                                    <li>Indium-111 Labeled White Blood Cells</li>
+                                    <li>Iodine-123 Capsules</li>
+                                    <li>Iodine-123 Iobenguane (Adreview)</li>
+                                    <li>Iodine-131 Diagnostic Capsules</li>
+                                </ul>
+                            </div>
+                            <div class="commish-text-container col-sm-3 col-md-3">
+                                <ul>
+                                    <li>Iodine-131 Therapy Capsules</li>
+                                    <li>Indium-111 Pentetreotide (Octreoscan)</li>
+                                    <li>Ga-68 Net Spot</li>
+                                    <li>Samarium 153 (Quadramet)</li>
 
-                    </ul>
-                </div>
-                <div class="commish-text-container col-sm-3 col-md-3">
-                    <ul>
-                        <li>Pentetate (DTPA)</li>
-                        <li>Pyrophosphate (PYP)</li>
-                        <li>Sestamibi</li>
-                        <li>Sodium Pertechnetate</li>
+                                </ul>
+                            </div>
+                            <div class="commish-text-container col-sm-3 col-md-3">
+                                <ul>
+                                    <li>Strontium-89 (Metastron)</li>
+                                    <li>Thallium-201</li>
+                                    <li>Xenon-133</li>
+                                    <li>Yttrium-90 Tiuxetan (Zevalin)</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="commish-photo-container nnsa-photo-container col-sm-12 col-md-12">
+                                <h1 class="commish-title">Adjunctive Pharmaceuticals and Interventional Agents</h1>
+                                <div class="commish-award-container">
+                                    <img src="assets/images/award certificate Tyler.jpg"
+                                        alt="Tyler Texas award certificate" class="commish-award-photo">
+                                </div>
 
-                    </ul>
-                </div>
-                <div class="commish-text-container col-sm-3 col-md-3">
-                    <ul>
-                        <li>Succimer (DMSA)</li>
-                        <li>Sulfur Colloid</li>
-                        <li>Tetrofosmin (Myoview)</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="commish-photo-container col-sm-12 col-md-12">
-                    <h1 class="commish-title">Regulatory Affairs</h1>
-                    <img src="assets/images/GoldSeal_transparent.gif" alt="Joint Commission Accreditation"
-                        class="commish-photo">
-                </div>
-                <div class="commish-text-container col-sm-4 col-md-3 firstList">
-                    <ul>
-                        <li>Carbon-14 Urea (PYtest Kit)</li>
-                        <li>Capromab pendetide (Prostascint)</li>
-                        <li>F-18 Fluorodeoxyglucose</li>
-                        <li>Gallium-67</li>
-                        <li>Indium-111 DTPA</li>
-                    </ul>
-                </div>
-                <div class="commish-text-container col-sm-3 col-md-3">
-                    <ul>
-                        <li>Indium-111 Labeled White Blood Cells</li>
-                        <li>Iodine-123 Capsules</li>
-                        <li>Iodine-123 Iobenguane (Adreview)</li>
-                        <li>Iodine-131 Diagnostic Capsules</li>
-                    </ul>
-                </div>
-                <div class="commish-text-container col-sm-3 col-md-3">
-                    <ul>
-                        <li>Iodine-131 Therapy Capsules</li>
-                        <li>Indium-111 Pentetreotide (Octreoscan)</li>
-                        <li>Ga-68 Net Spot</li>
-                        <li>Samarium 153 (Quadramet)</li>
-
-                    </ul>
-                </div>
-                <div class="commish-text-container col-sm-3 col-md-3">
-                    <ul>
-                        <li>Strontium-89 (Metastron)</li>
-                        <li>Thallium-201</li>
-                        <li>Xenon-133</li>
-                        <li>Yttrium-90 Tiuxetan (Zevalin)</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="row">
-                <div class="commish-photo-container nnsa-photo-container col-sm-12 col-md-12">
-                    <h1 class="commish-title">Adjunctive Pharmaceuticals and Interventional Agents</h1>
-                    <div class="commish-award-container">
-                        <img src="assets/images/award certificate Tyler.jpg" alt="Tyler Texas award certificate"
-                            class="commish-award-photo">
+                            </div>
+                            <div class="commish-text-container col-sm-3 offset-md-3 col-md-3 firstList">
+                                <ul>
+                                    <li>Adenosine (Adenoscan)</li>
+                                    <li>Aminophylline Injection</li>
+                                    <li>Dipyridamole</li>
+                                    <li>Dobutamine Injection</li>
+                                </ul>
+                            </div>
+                            <div class="commish-text-container col-sm-3 col-md-3">
+                                <ul>
+                                    <li>Regadenoson (Lexiscan)</li>
+                                    <li>Sincalide (Kinevac Injection)</li>
+                                    <li>Ultratag RBC Kit</li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
-
-                </div>
-                <div class="commish-text-container col-sm-3 offset-md-3 col-md-3 firstList">
-                    <ul>
-                        <li>Adenosine (Adenoscan)</li>
-                        <li>Aminophylline Injection</li>
-                        <li>Dipyridamole</li>
-                        <li>Dobutamine Injection</li>
-                    </ul>
-                </div>
-                <div class="commish-text-container col-sm-3 col-md-3">
-                    <ul>
-                        <li>Regadenoson (Lexiscan)</li>
-                        <li>Sincalide (Kinevac Injection)</li>
-                        <li>Ultratag RBC Kit</li>
-                    </ul>
-                </div>
             </div>
-        </div>
-        </div>
+            </div>
+
+
+            <!-- Jason's Footer -->
+            <footer id="footer" class="footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="footer-content-container col-sm-12">
+                            <img class="footer-nutech-logo" src="./assets/svg/LOGOblutrans.svg" alt="NuTech Logo">
+                            <div class="footer-nutech-location-container">
+                                <div class="footer-location-inner">
+                                    <p class="footer-location-header">Tyler, TX</p>
+                                    <a class="footer-location-number" href="tel:+19035928115">903.592.8115</a>
+                                </div>
+                                <div class="footer-location-inner">
+                                    <p class="footer-location-header">College Station, TX</p>
+                                    <a class="footer-location-number" href="tel:+19792680513">979.268.0513</a>
+                                </div>
+                                <div class="footer-location-inner">
+                                    <p class="footer-location-header">Wichita Falls, TX</p>
+                                    <a class="footer-location-number" href="tel:+19407611110">940.761.1110</a>
+                                </div>
+
+                            </div>
+                            <p class="footer-copyright">NuTech, Inc. &copy; All Rights Reserved. Powered by <a
+                                    class="footer-span" href="https://www.huntingtondigitaloc.com">Huntington
+                                    Digital.</a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
     </section>
 
-    <!-- Footer -->
-    <footer id="footer" class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="footer-content-container col-sm-12">
-                    <img class="footer-nutech-logo" src="./assets/svg/LOGOblutrans.svg" alt="NuTech Logo">
-                    <a class="footer-phone" href="tel:+19035928115">903.592.8115</a>
-                    <p class="footer-copyright">NuTech, Inc. &copy; All Rights Reserved. Powered by <a
-                            class="footer-span" href="https://www.huntingtondigitaloc.com">Huntington Digital.</a>
-                </div>
-            </div>
-        </div>
-    </footer>
+    <!-- Dependencies -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+    <script src="assets/js/index.js"></script>
 
 </body>
 
