@@ -1,10 +1,11 @@
 h1.commish-title {
     text-align: center;
+    padding-top: 3rem;
 }
 
-/* *{
-    font-family:  'Quicksand', sans-serif;
-} */
+h1.commish-title-top {
+    padding-top: 0;
+}
 
 section#info {
     padding-top: 3rem;
@@ -29,6 +30,10 @@ section#info {
 
 
 @media only screen and (max-width: 414px){
+    h1.commish-title-top {
+        padding-top: 0;
+    }
+
     section#info {
         padding-top: 3rem;
     }
