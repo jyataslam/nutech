@@ -1,0 +1,66 @@
+
+.team-row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.team-detail {
+    font-family: inherit;
+    font-size: 1rem;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    color: rgb(101, 101, 101);
+}
+
+.members-list {
+    font-family: inherit;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.member {
+    list-style-type: none;
+    font-style: italic;
+}
+
+.members-row {
+    padding: 1rem 0 3rem;
+}
+
+.team-row-wrapper {
+    margin-top: 4rem;
+}
+
+.member-bold {
+    font-weight: bold;
+    font-style: normal;
+}
+
+.team-subheader {
+    font-size: 2rem;
+}
+
+
+/* ----------------------- */
+/* MEDIA QUERIES ARE FUN!! */
+/* ----------------------- */
+
+
+@media only screen and (max-width: 414px){
+    .team-subheader {
+        font-size: 1.5rem;
+    }
+
+    .team-detail {
+        font-size: .875rem;
+    }
+
+    .member {
+        font-size: 1rem;
+    }
+}
