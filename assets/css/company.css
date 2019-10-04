@@ -79,7 +79,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     height: 150px;
-    background-position-y: 34%;
+    background-position-y: 7%;
 }
 
 /* ----------------------- */
@@ -97,6 +97,10 @@
     .landing-top {
         background-position-x: 45%;
         height: 30vh;
+    }
+
+    .company-video-row {
+        background-position-y: 0;
     }
 }
 
@@ -120,6 +124,10 @@
 
     .company-subdesc {
         font-size: .875rem;
+    }
+
+    .company-video-row {
+        background-position-y: initial;
     }
 }
 
