@@ -49,5 +49,9 @@ input {
     .w3-card-resources h3 {
         font-size: 1.5rem;
     }
+
+    .calc-header {
+        margin-top: -6rem;
+    }
 }
 
