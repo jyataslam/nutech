@@ -37,3 +37,17 @@ input {
     border: 1px solid lightgrey;
 }
 
+@media only screen and (max-width: 414px){
+    .w3-half {
+        margin-bottom: 0;
+    }
+
+    .links-title {
+        display: block;
+    }
+
+    .w3-card-resources h3 {
+        font-size: 1.5rem;
+    }
+}
+
