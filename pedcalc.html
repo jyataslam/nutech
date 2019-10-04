@@ -7,12 +7,17 @@
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
 	integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3pro.css">
+<script src="https://kit.fontawesome.com/96a8611a1e.js"></script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link href="https://fonts.googleapis.com/css?family=Roboto|Quicksand:400,500,600|Fjalla+One&display=swap"
+    rel="stylesheet">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+<link rel="stylesheet" type="text/css" href="assets/css/pedcalc.css">
+
 <script src="https://kit.fontawesome.com/96a8611a1e.js"></script>
-<script type="text/javascript" src="assets/js/index.js"></script>
 
 <!-- #BeginEditable "description" -->
 <meta name="description" content="Pediatric Dose Calculations" />
@@ -25,56 +30,87 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <meta http-equiv="Content-Language" content="en-us" />
 
-*********************************
+<!-- *********************************
 Design by: RTBWizards.com
 Release Date: August 2010
-*********************************
--->
+********************************* -->
+
 
 </head>
 
 <BODY>
 	<!-- Navbar (sit on top) -->
-	<div class="w3-top">
-		<div class="w3-bar myNavbar navbar-other-pages" id="myNavbar">
-			<a class="w3-bar-item w3-button w3-hover-black w3-hide-large w3-right" href="javascript:void(0);"
-				onclick="toggleFunction()" title="Toggle Navigation Menu">
-				<i class="fa fa-bars"></i>
-			</a>
+	<div class="w3-top other-navbar">
+        <div class="w3-bar myNavbar" id="myNavbar">
+            <a id="nav-btn" class="w3-bar-item w3-button w3-hover-black w3-hide-large w3-right"
+                href="javascript:void(0);" title="Toggle Navigation Menu">
+                <i class="fa fa-bars"></i>
+            </a>
 
-			<!-- Logo -->
-			<a class="logo-image">
-				<img src="assets/svg/LOGOblutrans.svg" class="img-fluid nutech-navbar-logo"></a>
-			<a href="./resources.html" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-right">
-				Resources</a>
-			<a href="./services.html" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-right">
-				Our Services</a>
-			<a href="./products.html" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-right">
-				Our Products</a>
-			<a href="./team.html" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-right">
-				Our Team</a>
-			<a href="./media.html" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-right">
-				Media</a>
-			<a href="./company.html" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-right">
-				Our Company</a>
-			<a href="./testimonials.html"
-				class="w3-bar-item w3-button w3-bar-item w3-button w3-hide-small w3-hide-medium w3-right">Testimonials</a>
-			<a href="./index.html"
-				class="w3-bar-item w3-button w3-bar-item w3-button w3-hide-small w3-hide-medium w3-right">Home</a>
-		</div>
+            <a class="logo-image" href="./index.html">
+                <img src="assets/svg/LOGOblutrans.svg" class="img-fluid nutech-navbar-logo"></a>
+            <a href="./resources.html" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-right">
+                Resources</a>
+            <a href="./services.html" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-right">
+                Our Services</a>
+            <a href="./products.html" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-right">
+                Our Products</a>
+            <a href="./team.html" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-right">
+                Our Team</a>
+            <a href="./media.html" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-right">
+                Media</a>
+            <a href="./company.html" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-right">
+                Our Company</a>
+            <a href="./testimonials.html"
+                class="w3-bar-item w3-button w3-bar-item w3-button w3-hide-small w3-hide-medium w3-right">Testimonials</a>
+            <a href="./index.html"
+                class="w3-bar-item w3-button w3-bar-item w3-button w3-hide-small w3-hide-medium w3-right">Home</a>
+        </div>
 
-		<!-- Navbar on small screens -->
-		<div id="navDemo" class="w3-bar-block w3-light-grey w3-hide w3-hide-large">
-			<a href="./index.html" class="w3-bar-item w3-button" onclick="toggleFunction()">Home</a>
-			<a href="./testimonials.html" class="w3-bar-item w3-button" onclick="toggleFunction()">Testimonials</a>
-			<a href="./company.html" class="w3-bar-item w3-button" onclick="toggleFunction()">Company</a>
-			<a href="./media.html" class="w3-bar-item w3-button" onclick="toggleFunction()">Media</a>
-			<a href="./team.html" class="w3-bar-item w3-button" onclick="toggleFunction()">Team</a>
-			<a href="./products.html" class="w3-bar-item w3-button" onclick="toggleFunction()">Products</a>
-			<a href="./services.html" class="w3-bar-item w3-button" onclick="toggleFunction()">Services</a>
-			<a href="./resources.html" class="w3-bar-item w3-button" onclick="toggleFunction()">Resources</a>
-		</div>
-	</div>
+        <!-- Create Side Nav when open -->
+        <div id="nav-menu" class="nav-menu">
+            <div class="container">
+                <div class="row">
+                    <ul class="nav-menu-list">
+                        <li class="nav-menu-list-item">
+                            <img class="sidenav-logo" src="./assets/svg/LOGOblutrans2.svg" alt="NuTech Logo">
+                        </li>
+                        <li class="nav-menu-list-item">
+                            <a href="./index.html" class="w3-bar-item w3-button">Home</a>
+                        </li>
+                        <hr class="sidenav-hr">
+                        <li class="nav-menu-list-item">
+                            <a href="./testimonials.html" class="w3-bar-item w3-button">Testimonials</a>
+                        </li>
+                        <hr class="sidenav-hr">
+                        <li class="nav-menu-list-item">
+                            <a href="./company.html" class="w3-bar-item w3-button">Company</a>
+                        </li>
+                        <hr class="sidenav-hr">
+                        <li class="nav-menu-list-item">
+                            <a href="./media.html" class="w3-bar-item w3-button">Media</a>
+                        </li>
+                        <hr class="sidenav-hr">
+                        <li class="nav-menu-list-item">
+                            <a href="./team.html" class="w3-bar-item w3-button">Team</a>
+                        </li>
+                        <hr class="sidenav-hr">
+                        <li class="nav-menu-list-item">
+                            <a href="./products.html" class="w3-bar-item w3-button">Products</a>
+                        </li>
+                        <hr class="sidenav-hr">
+                        <li class="nav-menu-list-item">
+                            <a href="./services.html" class="w3-bar-item w3-button">Services</a>
+                        </li>
+                        <hr class="sidenav-hr">
+                        <li class="nav-menu-list-item">
+                            <a href="./resources.html" class="w3-bar-item w3-button">Resources</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
 
 	<!-- Calculators -->
 	<div class="background">
@@ -125,9 +161,9 @@ Release Date: August 2010
 									<TR>
 										<TD class=style3></TD>
 										<TD class=style3><BR><INPUT onclick=peddose(this.form) value=Calculate
-												type=button name=calc><BR><BR></TD>
+												class="btn btn-outline-success" type=button name=calc><BR><BR></TD>
 										<TD class=style3></TD>
-										<TD class=style3><BR><INPUT value=Reset type=reset name=clear><BR></TD>
+										<TD class=style3><BR><INPUT class="btn btn-outline-danger" value=Reset type=reset name=clear><BR></TD>
 										<TD class=style3></TD>
 									</TR>
 									<TR>
@@ -244,75 +280,109 @@ Release Date: August 2010
 				</div>
 
 				<div class="w3-half">
-					<div class="w3-card-resources w3-container">
-						<h3>Quick Links</h3><br>
-						<ul>
-							<dt>CALCULATORS
-								<ul>
-									<li><a href="./radcalc.html">Radioactivity</a></li>
-									<li><a href="./pedcalc.html">Pediatric Dosage</a></li>
-									<li><a href="./maacalc.html">MAA Dose Particle</a></li>
-								</ul>
-							</dt>
-							<dt>PATIENT INFORMATION
-								<ul>
-									<li><a href="./assets/documents/Myocardial_Perfusion.pdf">Myocardial Perfusion</a>
+					<div class="container">
+						<div class="row">
+							<div class="links-text-container col-sm-12"">
+                            <nav class=" accordion-wrapper">
+								<h1 class="links-title">Quick Links</h1>
+								<ul class="ul-reset">
+									<li>
+										<a>Calculators</a>
+										<ul class="ul-reset">
+											<li><a href="./radcalc.html" target="_blank">Radioactivity</a></li>
+											<li><a href="./pedcalc.html" target="_blank">Pediatric Dosage</a></li>
+											<li><a href="./maacalc.html" target="_blank">MAA Dose Particle</a></li>
+										</ul>
 									</li>
-									<li><a href="./assets/documents/Skeletal_Imaging.pdf">Skeletal Imaging</a></li>
-									<li><a href="./assets/documents/Radioiodine_Therapy.pdf">Radioiodine Therapy</a>
+									<li>
+										<a>Patient Information</a>
+										<ul class="ul-reset">
+											<li><a href="./assets/documents/Myocardial_Perfusion.pdf"
+													target="_blank">Myocardial
+													Perfusion</a></li>
+											<li><a href="./assets/documents/Radioiodine_Therapy.pdf"
+													target="_blank">Radioiodine
+													Therapy</a>
+											</li>
+											<li><a href="./assets/documents/Terapia_de_Radioiodine.pdf"
+													target="_blank">Terapia
+													de
+													Radioiodine</a>
+											</li>
+											<li><a href="./compounded.html" target="_blank">Compounded Q&A</a></li>
+											<li><a href="http://www.snmmi.org/AboutSNMMI/Content.aspx?ItemNumber=5648"
+													target="_blank">What
+													is
+													Nuclear
+													Medicine?</a></li>
+										</ul>
 									</li>
-									<li><a href="./assets/documents/Terapia_de_Radioiodine.pdf">Terapia de
-											Radioiodine</a>
+									<li>
+										<a>Health Physics Worksheets</a>
+										<ul class="ul-reset">
+											<li><a href="./assets/documents/Dose_Calibrator_Linearity_Test_Worksheet.pdf"
+													target="_blank">Dose
+													Calibrator Decay Linearity</a></li>
+											<li><a href="./assets/documents/Dose_Calibrator_Accuracy_Test_Worksheet.pdf"
+													target="_blank">Dose
+													Calibrator Accuracy</a></li>
+											<li><a href="./assets/documents/Dose_Calibrator_Geometry_Test_Worksheet.pdf"
+													target="_blank">Dose
+													Calibrator Geometry</a></li>
+											<li><a href="./assets/documents/Request for Calibration or Service.pdf"
+													target="_blank">Survey
+													Meter
+													Calibration</a></li>
+											<li><a href="./assets/documents/Request for Calibration or Service.pdf"
+													target="_blank">Service
+													Request
+													Form</a></li>
+										</ul>
 									</li>
-									<li><a href="./compounded.html">Compounded Q&A</a></li>
-									<li><a href="http://www.snmmi.org/AboutSNMMI/Content.aspx?ItemNumber=5648">What is
-											Nuclear
-											Medicine?</a></li>
-								</ul>
-							</dt>
-							<dt>HEALTH PHYSICS WORKSHEETS
-								<ul>
-									<li><a href="./assets/documents/Dose_Calibrator_Linearity_Test_Worksheet.pdf">Dose
-											Calibrator Decay Linearity</a></li>
-									<li><a href="./assets/documents/Dose_Calibrator_Accuracy_Test_Worksheet.pdf">Dose
-											Calibrator Accuracy</a></li>
-									<li><a href="./assets/documents/Dose_Calibrator_Geometry_Test_Worksheet.pdf">Dose
-											Calibrator Geometry</a></li>
-									<li><a href="./assets/documents/Request for Calibration or Service.pdf">Survey Meter
-											Calibration</a></li>
-									<li><a href="./assets/documents/Request for Calibration or Service.pdf">Service
-											Request
-											Form</a></li>
-								</ul>
-							</dt>
-							<dt>SEALED SOURCE RETURN WORKSHEETS
-								<ul>
-									<li><a href="./assets/documents/Flood_Source_Receipt_and_Return_Check_.pdf">Sealed
-											Source Receipt and Return Checklist</a></li>
-									<li><a href="./assets/documents/Documentation_of_Transport_of_Source_as_a_Limi.pdf">Documentation
-											of Transport of Source as a Limited Quantity</a></li>
-								</ul>
-							</dt>
-							<dt>SHIPPER'S REPORTS
-								<ul>
-									<li><a href="./assets/documents/Shipper_s_Report.pdf">Shipping to
-											<i>NuTech</i> Tyler</a></li>
-									<li><a href="./assets/documents/CSShipperReport.pdf">Shipping to
-											<i>NuTech</i> College Station</a></li>
-									<li><a href="./assets/documents/WFShipperReport.pdf">Shipping to
-											<i>NuTech</i> Wichita Falls</a></li>
-								</ul>
-							</dt>
-							<dt>LABELS
-								<ul>
-									<li><a href="./assets/documents/Shipping Label.pdf">Shipping to <i>NuTech</i>
-											Tyler</a></li>
-									<li><a href="./assets/documents/Limited Quantity Label.pdf">Shipping Limited
-											Quantity</a>
+									<li>
+										<a>Sealed Source Return Worksheets</a>
+										<ul class="ul-reset">
+											<li><a href="./assets/documents/Flood_Source_Receipt_and_Return_Check_.pdf"
+													target="_blank">Sealed
+													Source Receipt and Return Checklist</a></li>
+											<li><a href="./assets/documents/Documentation_of_Transport_of_Source_as_a_Limi.pdf"
+													target="_blank">Documentation
+													of Transport of Source as a Limited Quantity</a></li>
+										</ul>
+									</li>
+									<li>
+										<a>Shipper's Reports</a>
+										<ul class="ul-reset">
+											<li><a href="./assets/documents/Shipper_s_Report.pdf"
+													target="_blank">Shipping
+													to
+													<i>NuTech</i> Tyler</a></li>
+											<li><a href="./assets/documents/CSShipperReport.pdf"
+													target="_blank">Shipping to
+													<i>NuTech</i> College Station</a></li>
+											<li><a href="./assets/documents/WFShipperReport.pdf"
+													target="_blank">Shipping to
+													<i>NuTech</i> Wichita Falls</a></li>
+										</ul>
+									</li>
+									<li>
+										<a>Labels</a>
+										<ul class="ul-reset">
+											<li><a href="./assets/documents/Shipping Label.pdf" target="_blank">Shipping
+													to
+													<i>NuTech</i>
+													Tyler</a></li>
+											<li><a href="./assets/documents/Limited Quantity Label.pdf"
+													target="_blank">Shipping
+													Limited
+													Quantity</a>
+											</li>
+										</ul>
 									</li>
 								</ul>
-							</dt>
-							</dt>
+								</nav>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -331,6 +401,11 @@ Release Date: August 2010
 				</div>
 			</div>
 		</footer>
+
+		<script src="https://code.jquery.com/jquery-3.4.1.min.js"
+			integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+		<script type="text/javascript" src="assets/js/index.js"></script>
 
 </body>
 
