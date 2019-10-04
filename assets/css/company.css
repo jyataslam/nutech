@@ -75,11 +75,11 @@
 }
 
 .company-video-row {
-    background: url(../images/doctor.jpg);
+    background: url(../images/lab-outside.JPG);
     background-size: cover;
     background-repeat: no-repeat;
     height: 150px;
-    background-position: center;
+    background-position-y: 34%;
 }
 
 /* ----------------------- */
