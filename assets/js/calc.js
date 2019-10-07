@@ -71,7 +71,6 @@ function calcTdecay(form) {
 }
 
 function calcTdisposal(form) {
-    debugger;
 
     var temp;
 
