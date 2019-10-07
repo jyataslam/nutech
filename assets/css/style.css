@@ -1005,6 +1005,14 @@ a.footer-span:hover {
   padding: 2px;
   border: 1px solid grey;
   margin: 15px 0;
+  transform: scale(1);
+  transition: all .3s;
+}
+
+.commish-award-photo:hover {
+  cursor: pointer;
+  opacity: .5;
+  transform: scale(1.1);
 }
 
 .nnsa-photo-container {
@@ -1149,6 +1157,32 @@ a.footer-span:hover {
   background-position: center;
 }
 
+/* Open Awards Certs on Click */
+.nnsa-modal-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  transform: scale(0);
+  transition: all .5s ease-in-out;
+}
+
+.modal-open {
+  opacity: 1;
+  z-index: 1;
+  background: #000000b5;
+  transform: scale(1);
+}
+
+.modal-open img {
+  height: 80%;
+}
+
 .footer-nutech-location-container {
   margin: 0 auto;
   display: flex;
@@ -1193,6 +1227,11 @@ a.footer-span:hover {
 
     .hero {
       background-position-x: -482px;
+    }
+
+    .modal-open img {
+       height: auto;
+       width: 80%;
     }
 }
 
