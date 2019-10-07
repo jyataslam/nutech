@@ -31,6 +31,17 @@ $(document).ready(function () {
     });
 });
 
+// Click NNSA photos to open modal on index.html
+const nnsaPhoto = $('.commish-award-photo');
+const nnsaContainer = $('.nnsa-modal-container');
+
+$(nnsaPhoto).click(() => handleModalOpen());
+$(nnsaContainer).click(() => handleModalOpen());
+
+handleModalOpen = () => {
+	$(nnsaContainer).hasClass('modal-open') ? $(nnsaContainer).removeClass('modal-open') : $(nnsaContainer).addClass('modal-open');
+}
+
 // Hide Sidenav on Body click
 $('#background, .background').click(() => handleBodyClick());
 
