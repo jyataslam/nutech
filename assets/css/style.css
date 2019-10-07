@@ -180,20 +180,21 @@
     align-items: stretch;
   }
 
-  .footer-location-number { 
-    color:  #003da5;
+  a.footer-location-number { 
+    color:  white;
     text-decoration: none;
 }
-
-  @media(min-width:768px) {
-    /* .w3-row-padding {
-      flex-flow: row nowrap;
-    } */
-  }
 
   p {
     font-size: 18px;
     text-align: left;
+  }
+
+  .cars-image-long {
+    background-image: url(../images/cars.JPG);
+    background-position: center;
+    background-size: cover;
+    height: 300px;
   }
   
   /* ----------------
@@ -346,7 +347,7 @@
   
   li {
     font-size: 16px;
-    list-style-type: square;
+    list-style-type: circle;
     text-align: left;
   }
   
@@ -610,6 +611,10 @@
   flex-direction: column;
 }
 
+.home-link-icon {
+  width: 250px;
+}
+
 .nutech-hero-logo {
   margin: 0 auto;
   width: 850px;
@@ -776,8 +781,8 @@ letter-spacing: 0.1rem;
 
 .footer {
   padding: 20px 0;
-  background-color: rgb(219, 219, 219);
-  color: #000;
+  background-color: rgb(25, 28, 55);
+  color: #fff;
 }
 
 .footer-content-container {
@@ -811,12 +816,12 @@ letter-spacing: 0.1rem;
 a.footer-span {
   font-family: 'Quicksand', sans-serif;
   font-weight: 400;
-  color: black;
+  color: white;
   transition: color .4s;
 }
 
 a.footer-span:hover {
-  color: blue;
+  color: lightgrey;
 }
 
 .ul-reset {
@@ -990,7 +995,8 @@ a.footer-span:hover {
 }
 
 .commish-photo {
-  height: 230px
+  height: 230px;
+  margin-top: 1rem;
 }
 
 .commish-award-container {
@@ -1006,7 +1012,7 @@ a.footer-span:hover {
   border: 1px solid grey;
   margin: 15px 0;
   transform: scale(1);
-  transition: all .3s;
+  transition: all .5s;
 }
 
 .commish-award-photo:hover {
@@ -1090,7 +1096,7 @@ a.footer-span:hover {
   background-image: url(../images/nutech-lab.JPG);
   background-position: center;
   background-size: cover;
-  height: 250px;
+  height: 300px;
 }
 
 .pharma-image-long img {
@@ -1160,6 +1166,7 @@ a.footer-span:hover {
 /* Open Awards Certs on Click */
 .nnsa-modal-container {
   display: flex;
+  background: black;
   justify-content: center;
   align-items: center;
   position: fixed;
@@ -1169,14 +1176,21 @@ a.footer-span:hover {
   bottom: 0;
   opacity: 0;
   transform: scale(0);
-  transition: all .5s ease-in-out;
+  transition: all .5s;
 }
 
 .modal-open {
   opacity: 1;
   z-index: 1;
-  background: #000000b5;
+  background: #000000a8;
+  overflow: auto;
   transform: scale(1);
+  transition: all .5s;
+}
+
+.nnsa-modal-container img {
+  height: 0%;
+  transition: all .5s;
 }
 
 .modal-open img {
@@ -1283,11 +1297,19 @@ a.footer-span:hover {
     .w3-bar .w3-button:after {
       content: none;
     }
+
+    .commish-photo {
+      margin-top: 2rem;
+    }
 }
 
 @media only screen and (max-width: 414px){
     .faq {
         padding: 40px 0;
+    }
+
+    .commish-photo {
+      margin-top: 0;
     }
 
     .faqContainer {
@@ -1336,7 +1358,7 @@ a.footer-span:hover {
 
     .about-us-header {
       font-size: 1.5rem;
-      padding-bottom: 1rem;
+      padding-bottom: 0;
     }
 
     .about-us-description {
@@ -1464,12 +1486,12 @@ a.footer-span:hover {
     }
 
     .doctor {
-      height: 170px;
+      height: 200px;
       background-attachment: scroll;
     }
 
     .pharma-image-long {
-      height: 170px;
+      height: 200px;
     }
 
     .about-us-video-container iframe {
@@ -1478,6 +1500,14 @@ a.footer-span:hover {
 
     .hero {
       background-position-x: -328px;
+    }
+
+    .home-link-icon {
+      width: 150px;
+    }
+
+    .cars-image-long {
+      height: 200px;
     }
 }
 

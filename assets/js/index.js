@@ -32,14 +32,44 @@ $(document).ready(function () {
 });
 
 // Click NNSA photos to open modal on index.html
-const nnsaPhoto = $('.commish-award-photo');
-const nnsaContainer = $('.nnsa-modal-container');
+const nnsaPhoto1 = $('.cert-one');
+const nnsaPhoto2 = $('.cert-two');
+const nnsaPhoto3 = $('.cert-three');
 
-$(nnsaPhoto).click(() => handleModalOpen());
-$(nnsaContainer).click(() => handleModalOpen());
+const nnsaContainer1 = $('.modal-one');
+const nnsaContainer2 = $('.modal-two');
+const nnsaContainer3 = $('.modal-three');
 
-handleModalOpen = () => {
-	$(nnsaContainer).hasClass('modal-open') ? $(nnsaContainer).removeClass('modal-open') : $(nnsaContainer).addClass('modal-open');
+$(nnsaPhoto1).click(() => handleModalOpen1());
+$(nnsaPhoto2).click(() => handleModalOpen2());
+$(nnsaPhoto3).click(() => handleModalOpen3());
+
+$(nnsaContainer1).click(() => handleModalClose1());
+$(nnsaContainer2).click(() => handleModalClose2());
+$(nnsaContainer3).click(() => handleModalClose3());
+
+handleModalOpen1 = () => {
+	$(nnsaContainer1).hasClass('modal-open') ? $(nnsaContainer1).removeClass('modal-open') : $(nnsaContainer1).addClass('modal-open');
+}
+
+handleModalOpen2 = () => {
+	$(nnsaContainer2).hasClass('modal-open') ? $(nnsaContainer2).removeClass('modal-open') : $(nnsaContainer2).addClass('modal-open');
+}
+
+handleModalOpen3 = () => {
+	$(nnsaContainer3).hasClass('modal-open') ? $(nnsaContainer3).removeClass('modal-open') : $(nnsaContainer3).addClass('modal-open');
+}
+
+handleModalClose1 = () => {
+	$(nnsaContainer1).removeClass('modal-open');
+}
+
+handleModalClose2 = () => {
+	$(nnsaContainer2).removeClass('modal-open');
+}
+
+handleModalClose3 = () => {
+	$(nnsaContainer3).removeClass('modal-open');
 }
 
 // Hide Sidenav on Body click
