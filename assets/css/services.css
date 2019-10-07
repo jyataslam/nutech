@@ -5,6 +5,15 @@
 
 .commish-text-container {
     padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.services-cars-photo {
+    height: 400px;
+    border-radius: 5px;
 }
 
 .p-top4rem {
@@ -16,6 +25,15 @@
     font-size: 1rem;
 }
 
+.commish-text-container ul {
+    margin-bottom: 0;
+}
+
+.nuclear-icon {
+    height: 60%;
+    margin-top: 1.5rem;
+}
+
 .commish-text-container ul li {
     font-family: 'Quicksand', sans-serif;
     font-size: 1rem;
@@ -25,6 +43,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    width: 100%;
 }
 
 .services-award-photo {
@@ -47,10 +66,28 @@
     font-family: 'Lato', sans-serif !important;
 }
 
+.services-cars-mobile-container {
+    display: none;
+}
+
+.services-cars-desktop-container {
+    height: 400px;
+    width: 100%;
+    background: url(../images/services-cars.JPG);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 25px;
+}
+
 
 @media only screen and (max-width: 768px){
     .services-award-photo {
         height: 118px;
+    }
+
+    .nuclear-icon {
+        height: 40%;
     }
 }
 
@@ -61,7 +98,47 @@
         margin-top: 2rem;
     }
 
+    .services-cars-photo {
+        display: none;
+    }
+
     .services-award-photo {
         height: 133px;
+    }
+
+    .nuclear-icon {
+        height: 80%;
+        margin-top: 0;
+    }
+    
+    .links-title {
+        display: block;
+        font-size: 1.4rem;
+    }
+
+    .horizontal-line {
+        margin: 1rem auto 4rem;
+    }
+
+    .services-cars-desktop-container {
+        display: none;
+    }
+
+    .services-cars-mobile-container {
+        height: 200px;
+        width: 100vw;
+        display: block;
+        background: url(../images/services-cars.JPG);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .p-top4rem {
+        padding-top: 3rem;
+    }
+
+    .first-services-text {
+        padding-top: 0;
     }
 }
