@@ -590,7 +590,7 @@
 .creds-row {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
 }
 
@@ -1163,6 +1163,18 @@ a.footer-span:hover {
   background-position: center;
 }
 
+.bps-text-container {
+  display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-creds-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /* Open Awards Certs on Click */
 .nnsa-modal-container {
   display: flex;
@@ -1301,6 +1313,10 @@ a.footer-span:hover {
     .commish-photo {
       margin-top: 2rem;
     }
+
+    .hero-creds-container {
+      padding-bottom: 1rem;
+    }
 }
 
 @media only screen and (max-width: 414px){
@@ -1334,6 +1350,7 @@ a.footer-span:hover {
 
     .nutech-hero-logo {
       width: 280px;
+      bottom: 0;
     }
 
     .hero-creds-title {
@@ -1353,7 +1370,7 @@ a.footer-span:hover {
     }
 
     .creds-container {
-      top: -84px;
+      top: 11rem;
     }
 
     .about-us-header {

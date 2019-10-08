@@ -23,6 +23,7 @@
 .commish-text-container > p {
     font-family: inherit;
     font-size: 1rem;
+    width: 100%;
 }
 
 .commish-text-container ul {
