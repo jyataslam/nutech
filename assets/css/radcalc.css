@@ -56,6 +56,7 @@ input {
 }
 
 .formula-display {
+    margin-top: 20px;
     display: inline-block;
     padding-left: 0;
     padding-right: 0;
@@ -66,6 +67,19 @@ input {
     justify-content: flex-start;
     align-items: center;
 }
+
+.formula-display b {
+    margin-bottom: 15px;
+}
+
+.formula-display .special-formula {
+    margin-bottom: 0;
+}
+
+.formula-title{
+    margin-bottom:20px;
+}
+
 
 .first-row {
     background-color: whitesmoke;
@@ -104,6 +118,7 @@ width:100%;
 .second-row {
     padding-left: 15px;
     padding-right: 15px;
+    margin-top: 30px;
 }
 
 .unit-class td{

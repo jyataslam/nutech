@@ -114,7 +114,7 @@
             </div>
             <div class="bgimg-1 w3-display-container w3-padding-64" id="page-container">
                 <div class="w3-row-padding w3-center w3-margin-top w3-margin-bottom w3-mobile">
-                    <div class="container-fluid">
+                    <div class="container-fluid formula-title">
                         <div class="first-row">
                             <h3>Radioactivity Calculator</h3>
                             <div class="row">
@@ -265,7 +265,8 @@
                                         <tr>
                                             <th></th><b>Radioactive Decay</b></th>
                                         <tr></tr>
-                                        <td class="form-row-flex"><b>N=N<sub>o</sub>e<sup>-(0.693t/T<sub>&frac12;</sub>)</sup></b>
+                                        <td class="form-row-flex">
+                                            <b class="special-formula">N=N<sub>o</sub>e<sup>-(0.693t/T<sub>&frac12;</sub>)</sup></b>
                                         </td>
                                         </tr>
                                         <tr>
@@ -274,10 +275,10 @@
                                         </tr>
                                         <tr>
                                             <td>Decay time (t)</td>
-                                            <td ><input name="decayt" type="text" size="10" ></td>
+                                            <td><input name="decayt" type="text" size="10"></td>
                                         </tr>
                                         <tr class="col-12">
-                                            <td >Time units
+                                            <td>Time units
                                                 <input type="radio" name="decayu" value="s">
                                                 s
                                                 <input type="radio" name="decayu" value="m">
@@ -292,8 +293,9 @@
                                         <tr>
 
                                             <td>Disposal Limit (D.L.) </td>
-                                            <td><input type="text" name="disposalLimit" size="10" placeholder="(MBq/kg)">
-                                                </td>
+                                            <td><input type="text" name="disposalLimit" size="10"
+                                                    placeholder="(MBq/kg)">
+                                            </td>
                                         </tr>
                                         <tr>
                                             <td>mass (m)</td>
@@ -354,17 +356,17 @@
                                             <tr>
                                                 <td>Initial activity (N<sub>o</sub>)</td>
                                                 <td><input type="text" name="initact3" size="10" placeholder="kBq">
-                                                    </td>
+                                                </td>
                                             </tr>
                                             <tr>
                                                 <td>Disposal Limit (D.L.) </td>
                                                 <td><input type="text" name="disposalLimit" size="10" placeholder="kBq">
-                                                    </td>
+                                                </td>
                                             </tr>
                                             <tr>
                                                 <td>mass (m)</td>
                                                 <td><input type="text" name="mass" size="10" placeholder="kg">
-                                                    </td>
+                                                </td>
                                             </tr>
                                             <tr>
                                                 <td><input name="calc3" type="button" class=" btn btn-primary"
@@ -385,7 +387,7 @@
                             <TR>
                                 <div class="row second-row">
                                     <TD>
-                                        <FORM NAME="convertU" class="col-4 formula-display">
+                                        <FORM NAME="convertU" class="col-12 col-md-4   formula-display">
                                             <div class="w3-card-resources w3-container w3-mobile form-flex form-calc">
                                                 <table>
                                                     <th></th><B>Unit Converter</B></th>
@@ -414,8 +416,8 @@
                                                         </td>
                                                     </tr>
                                                     <tr>
-                                                        <td class="form-flex"><INPUT NAME="clear" TYPE="reset" class="btn btn-warning"
-                                                                VALUE="Reset"></td>
+                                                        <td class="form-flex"><INPUT NAME="clear" TYPE="reset"
+                                                                class="btn btn-warning" VALUE="Reset"></td>
                                                     </tr>
                                                 </table>
                                             </div>
@@ -423,7 +425,7 @@
                                         </FORM>
                                     </TD>
                                     <TD>
-                                        <FORM NAME="dateadd" class="col-4 formula-display">
+                                        <FORM NAME="dateadd" class="col-12 col-md-4  formula-display">
                                             <div class="w3-card-resources w3-container w3-mobile form-flex">
                                                 <table>
                                                     <tr>
@@ -453,7 +455,7 @@
                         </form>
                         </TD>
                         <TD>
-                            <FORM NAME="dateadd2" class="col-4 formula-display">
+                            <FORM NAME="dateadd2" class="col-12 col-md-4   formula-display">
                                 <div class="w3-card-resources w3-container w3-mobile form-flex">
                                     <table>
                                         <th></th><B>Add or Subtract A Number of Days To A
@@ -492,101 +494,104 @@
             <div class="container-fluid">
                 <div class="container">
                     <div class="row">
-                        <div class="links-text-container offset-3 col-6">
+                        <div class="links-text-container col-12 offset-md-3 col-md-6">
                             <nav class="accordion-wrapper">
-                            <h1 class="links-title">Quick Links</h1>
-                            <ul class="ul-reset">
-                                <li>
-                                    <a>Calculators</a>
-                                    <ul class="ul-reset">
-                                        <li><a href="./radcalc.html" target="_blank">Radioactivity</a></li>
-                                        <li><a href="./pedcalc.html" target="_blank">Pediatric Dosage</a></li>
-                                        <li><a href="./maacalc.html" target="_blank">MAA Dose Particle</a></li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <a>Patient Information</a>
-                                    <ul class="ul-reset">
-                                        <li><a href="./assets/documents/Myocardial_Perfusion.pdf"
-                                                target="_blank">Myocardial
-                                                Perfusion</a></li>
-                                        <li><a href="./assets/documents/Radioiodine_Therapy.pdf"
-                                                target="_blank">Radioiodine
-                                                Therapy</a>
-                                        </li>
-                                        <li><a href="./assets/documents/Terapia_de_Radioiodine.pdf"
-                                                target="_blank">Terapia
-                                                de
-                                                Radioiodine</a>
-                                        </li>
-                                        <li><a href="./compounded.html" target="_blank">Compounded Q&A</a></li>
-                                        <li><a href="http://www.snmmi.org/AboutSNMMI/Content.aspx?ItemNumber=5648"
-                                                target="_blank">What
-                                                is
-                                                Nuclear
-                                                Medicine?</a></li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <a>Health Physics Worksheets</a>
-                                    <ul class="ul-reset">
-                                        <li><a href="./assets/documents/Dose_Calibrator_Linearity_Test_Worksheet.pdf"
-                                                target="_blank">Dose
-                                                Calibrator Decay Linearity</a></li>
-                                        <li><a href="./assets/documents/Dose_Calibrator_Accuracy_Test_Worksheet.pdf"
-                                                target="_blank">Dose
-                                                Calibrator Accuracy</a></li>
-                                        <li><a href="./assets/documents/Dose_Calibrator_Geometry_Test_Worksheet.pdf"
-                                                target="_blank">Dose
-                                                Calibrator Geometry</a></li>
-                                        <li><a href="./assets/documents/Request for Calibration or Service.pdf"
-                                                target="_blank">Survey
-                                                Meter
-                                                Calibration</a></li>
-                                        <li><a href="./assets/documents/Request for Calibration or Service.pdf"
-                                                target="_blank">Service
-                                                Request
-                                                Form</a></li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <a>Sealed Source Return Worksheets</a>
-                                    <ul class="ul-reset">
-                                        <li><a href="./assets/documents/Flood_Source_Receipt_and_Return_Check_.pdf"
-                                                target="_blank">Sealed
-                                                Source Receipt and Return Checklist</a></li>
-                                        <li><a href="./assets/documents/Documentation_of_Transport_of_Source_as_a_Limi.pdf"
-                                                target="_blank">Documentation
-                                                of Transport of Source as a Limited Quantity</a></li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <a>Shipper's Reports</a>
-                                    <ul class="ul-reset">
-                                        <li><a href="./assets/documents/Shipper_s_Report.pdf" target="_blank">Shipping
-                                                to
-                                                <i>NuTech</i> Tyler</a></li>
-                                        <li><a href="./assets/documents/CSShipperReport.pdf" target="_blank">Shipping to
-                                                <i>NuTech</i> College Station</a></li>
-                                        <li><a href="./assets/documents/WFShipperReport.pdf" target="_blank">Shipping to
-                                                <i>NuTech</i> Wichita Falls</a></li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <a>Labels</a>
-                                    <ul class="ul-reset">
-                                        <li><a href="./assets/documents/Shipping Label.pdf" target="_blank">Shipping
-                                                to
-                                                <i>NuTech</i>
-                                                Tyler</a></li>
-                                        <li><a href="./assets/documents/Limited Quantity Label.pdf"
-                                                target="_blank">Shipping
-                                                Limited
-                                                Quantity</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
+                                <h1 class="links-title">Quick Links</h1>
+                                <ul class="ul-reset">
+                                    <li>
+                                        <a>Calculators</a>
+                                        <ul class="ul-reset">
+                                            <li><a href="./radcalc.html" target="_blank">Radioactivity</a></li>
+                                            <li><a href="./pedcalc.html" target="_blank">Pediatric Dosage</a></li>
+                                            <li><a href="./maacalc.html" target="_blank">MAA Dose Particle</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a>Patient Information</a>
+                                        <ul class="ul-reset">
+                                            <li><a href="./assets/documents/Myocardial_Perfusion.pdf"
+                                                    target="_blank">Myocardial
+                                                    Perfusion</a></li>
+                                            <li><a href="./assets/documents/Radioiodine_Therapy.pdf"
+                                                    target="_blank">Radioiodine
+                                                    Therapy</a>
+                                            </li>
+                                            <li><a href="./assets/documents/Terapia_de_Radioiodine.pdf"
+                                                    target="_blank">Terapia
+                                                    de
+                                                    Radioiodine</a>
+                                            </li>
+                                            <li><a href="./compounded.html" target="_blank">Compounded Q&A</a></li>
+                                            <li><a href="http://www.snmmi.org/AboutSNMMI/Content.aspx?ItemNumber=5648"
+                                                    target="_blank">What
+                                                    is
+                                                    Nuclear
+                                                    Medicine?</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a>Health Physics Worksheets</a>
+                                        <ul class="ul-reset">
+                                            <li><a href="./assets/documents/Dose_Calibrator_Linearity_Test_Worksheet.pdf"
+                                                    target="_blank">Dose
+                                                    Calibrator Decay Linearity</a></li>
+                                            <li><a href="./assets/documents/Dose_Calibrator_Accuracy_Test_Worksheet.pdf"
+                                                    target="_blank">Dose
+                                                    Calibrator Accuracy</a></li>
+                                            <li><a href="./assets/documents/Dose_Calibrator_Geometry_Test_Worksheet.pdf"
+                                                    target="_blank">Dose
+                                                    Calibrator Geometry</a></li>
+                                            <li><a href="./assets/documents/Request for Calibration or Service.pdf"
+                                                    target="_blank">Survey
+                                                    Meter
+                                                    Calibration</a></li>
+                                            <li><a href="./assets/documents/Request for Calibration or Service.pdf"
+                                                    target="_blank">Service
+                                                    Request
+                                                    Form</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a>Sealed Source Return Worksheets</a>
+                                        <ul class="ul-reset">
+                                            <li><a href="./assets/documents/Flood_Source_Receipt_and_Return_Check_.pdf"
+                                                    target="_blank">Sealed
+                                                    Source Receipt and Return Checklist</a></li>
+                                            <li><a href="./assets/documents/Documentation_of_Transport_of_Source_as_a_Limi.pdf"
+                                                    target="_blank">Documentation
+                                                    of Transport of Source as a Limited Quantity</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a>Shipper's Reports</a>
+                                        <ul class="ul-reset">
+                                            <li><a href="./assets/documents/Shipper_s_Report.pdf"
+                                                    target="_blank">Shipping
+                                                    to
+                                                    <i>NuTech</i> Tyler</a></li>
+                                            <li><a href="./assets/documents/CSShipperReport.pdf"
+                                                    target="_blank">Shipping to
+                                                    <i>NuTech</i> College Station</a></li>
+                                            <li><a href="./assets/documents/WFShipperReport.pdf"
+                                                    target="_blank">Shipping to
+                                                    <i>NuTech</i> Wichita Falls</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a>Labels</a>
+                                        <ul class="ul-reset">
+                                            <li><a href="./assets/documents/Shipping Label.pdf" target="_blank">Shipping
+                                                    to
+                                                    <i>NuTech</i>
+                                                    Tyler</a></li>
+                                            <li><a href="./assets/documents/Limited Quantity Label.pdf"
+                                                    target="_blank">Shipping
+                                                    Limited
+                                                    Quantity</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
                             </nav>
                         </div>
                     </div>
