@@ -141,15 +141,16 @@
             </div>
             <div class="bgimg-1 w3-display-container w3-padding-64" id="page-container">
                 <div class="w3-row-padding w3-center w3-margin-top w3-margin-bottom w3-mobile">
-                    <div class="w3-half">
-                        <div class="w3-card-resources w3-container w3-mobile">
+                    <div class="container-fluid formula-title">
+                        <div class="first-row">
                             <h3>Radioactivity Calculator</h3>
-                            <div class="w3-card-resources w3-container w3-mobile">
-                                <FORM style="WIDTH: auto" name=isoform2>
+                            <div class="row">
+                                <FORM name=isoform2 class="col-12 offset-md-3 offset-lg-3">
                                     <table class="table">
-                                        <TD width="auto" class="radcalc-td">
+                                        <TD class="radcalc-td">
                                             <p>
-                                                <SELECT NAME="isolist" class="Menu btn btn-secondary select-button" onFocus="clearinput(this.form)">
+                                                <SELECT NAME="isolist" class="Menu btn btn-secondary select-button"
+                                                    onFocus="clearinput(this.form)">
                                                     <OPTION VALUE="Calcium 45">Calcium 45&nbsp;
                                                     <OPTION VALUE="Carbon 14">Carbon 14&nbsp;
                                                     <OPTION VALUE="Chromium 51">Chromium 51&nbsp;
@@ -271,12 +272,12 @@
                                                     VALUE="Select" class="btn btn-dark">
                                             </p>
                                         </TD>
-                                        <TD width="auto">
+                                        <TD>
                                             <p><B>Isotope</B>
-                                                <INPUT NAME="topename" TYPE="text" SIZE=6>
+                                                <INPUT NAME="topename" TYPE="text" SIZE=12 class="mobile-input">
                                                 <B>Half-life (T<sub>1/2</sub>)</B>
-                                                <INPUT NAME="halflife" TYPE="text" SIZE=12>
-                                                <INPUT NAME="timeunit" TYPE="text" SIZE=1>
+                                                <INPUT NAME="halflife" TYPE="text" SIZE=12 class="mobile-input2">
+                                                <INPUT NAME="timeunit" TYPE="text" SIZE=1 class="mobile-input3">
                                             </p>
                                         </TD>
                                         </td>
@@ -285,13 +286,14 @@
                             </div>
 
                             <!-- Calculator -->
-                            <FORM NAME="isoform">
-                                <div class="w3-card-resources w3-container w3-mobile">
-                                    <table width="auto">
+                            <FORM NAME="isoform" class="row form-row">
+                                <div class="col-12 col-md-4 formula-display ">
+                                    <table class="col-12">
                                         <tr>
                                             <th></th><b>Radioactive Decay</b></th>
                                         <tr></tr>
-                                        <td><b>N=N<sub>o</sub>e<sup>-(0.693t/T<sub>&frac12;</sub>)</sup></b>
+                                        <td class="form-row-flex">
+                                            <b class="special-formula">N=N<sub>o</sub>e<sup>-(0.693t/T<sub>&frac12;</sub>)</sup></b>
                                         </td>
                                         </tr>
                                         <tr>
@@ -302,7 +304,7 @@
                                             <td>Decay time (t)</td>
                                             <td><input name="decayt" type="text" size="10"></td>
                                         </tr>
-                                        <tr>
+                                        <tr class="col-12">
                                             <td>Time units
                                                 <input type="radio" name="decayu" value="s">
                                                 s
@@ -318,21 +320,19 @@
                                         <tr>
 
                                             <td>Disposal Limit (D.L.) </td>
-                                            <td><input type="text" name="disposalLimit" size="10">
-                                                (MBq/kg)</td>
+                                            <td><input type="text" name="disposalLimit" size="10"
+                                                    placeholder="(MBq/kg)">
+                                            </td>
                                         </tr>
                                         <tr>
                                             <td>mass (m)</td>
-                                            <td><input type="text" name="mass" size="10">
-                                                kg</td>
-                                        </tr>
-                                        <tr>
-                                            <td><input name="calc3" type="button" class="btn btn-outline-success" onclick="calcTdisposal(this.form)"
-                                                    value="Calculate">
+                                            <td><input type="text" name="mass" size="10" placeholder="kg">
                                             </td>
+                                        </tr>
+                                        <tr class="col-12">
 
-                                            <td><input name="calc1" type="button" class="btn btn-outline-primary" onclick="calcdecay(this.form)"
-                                                    value="Calculate"></td>
+                                            <td><input name="calc1" type="button" class=" btn btn-primary"
+                                                    onclick="calcdecay(this.form)" value="Calculate"></td>
 
                                         </tr>
                                         <tr>
@@ -342,8 +342,8 @@
                                     </table>
                                 </div>
                                 <td>
-                                    <div class="w3-card-resources w3-container w3-mobile">
-                                        <table width="auto">
+                                    <div class="col-12 col-md-4  formula-display">
+                                        <table>
                                             <tr>
                                                 <th></th><b>Timed Decay</b></th>
                                             <tr></tr>
@@ -359,21 +359,21 @@
                                                 <td><input name="finact2" type="text" size="10"></td>
                                             </tr>
                                             <tr>
-                                                <td><input name="calc2" type="button" class="btn btn-outline-success" onclick="calcTdecay(this.form)"
-                                                        value="Calculate"></td>
+                                                <td><input name="calc2" type="button" class=" btn btn-primary"
+                                                        onclick="calcTdecay(this.form)" value="Calculate"></td>
                                             </tr>
                                             <tr>
                                                 <td>Decay time (t)</td>
-                                                <td><input name="decayt2" type="text" size=10>
-                                                    <input type="text" name="Tunit" size=1></td>
+                                                <td><input name="decayt2" type="text" size=10 class="input-left">
+                                                    <input type="text" name="Tunit" size=1 class="input-left"></td>
                                             </tr>
                                         </table>
                                     </div>
                                 </td>
                                 </td>
                                 <td>
-                                    <div class="w3-card-resources w3-container w3-mobile">
-                                        <table width="auto">
+                                    <div class="col-12 col-md-4  formula-display">
+                                        <table>
                                             <tr>
                                                 <th></th><b>Timed Solid Disposal</b></th>
                                             <tr></tr>
@@ -382,83 +382,86 @@
                                             </tr>
                                             <tr>
                                                 <td>Initial activity (N<sub>o</sub>)</td>
-                                                <td><input type="text" name="initact3" size="10">
-                                                    kBq</td>
+                                                <td><input type="text" name="initact3" size="10" placeholder="kBq">
+                                                </td>
                                             </tr>
                                             <tr>
                                                 <td>Disposal Limit (D.L.) </td>
-                                                <td><input type="text" name="disposalLimit" size="10">
-                                                    kBq</td>
+                                                <td><input type="text" name="disposalLimit" size="10" placeholder="kBq">
+                                                </td>
                                             </tr>
                                             <tr>
                                                 <td>mass (m)</td>
-                                                <td><input type="text" name="mass" size="10">
-                                                    kg</td>
+                                                <td><input type="text" name="mass" size="10" placeholder="kg">
+                                                </td>
                                             </tr>
                                             <tr>
-                                                <td><input name="calc3" type="button" class="btn btn-outline-success" onclick="calcTdisposal(this.form)"
-                                                        value="Calculate">
+                                                <td><input name="calc3" type="button" class=" btn btn-primary"
+                                                        onclick="calcTdisposal(this.form)" value="Calculate">
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td>Decay time (t)</td>
-                                                <td><input type="text" name="decayt3" size=10>
-                                                    <input type="text" name="Tunit3" size=1></td>
+                                                <td><input type="text" name="decayt3" size=10 class="input-left">
+                                                    <input type="text" name="Tunit3" size=1 class="input-left"></td>
                                             </tr>
                                         </table>
                                     </div>
                                 </td>
                                 </tr>
                             </FORM>
-                            <A NAME="lower"></A>
+                            <!-- <A NAME="lower"></A> -->
                             <TR>
-                                <TD>
-                                    <FORM NAME="convertU">
-                                        <div class="w3-card-resources w3-container w3-mobile">
-                                            <table>
-                                                <th></th><B>Unit Converter</B></th>
-                                                <tr>
-                                                    <td>Activity 1 <INPUT NAME="activity1" TYPE="text" SIZE=6>
+                                <div class="row second-row">
+                                    <TD>
+                                        <FORM NAME="convertU" class="col-12 col-md-4   formula-display">
+                                            <div class="w3-card-resources w3-container w3-mobile form-flex form-calc">
+                                                <table>
+                                                    <th></th><B>Unit Converter</B></th>
+                                                    <tr>
+                                                        <td>Activity 1 <INPUT NAME="activity1" TYPE="text" SIZE=6>
+                                                        </td>
+                                                        <td><INPUT TYPE="radio" NAME="unit1" VALUE="kBq">kBq<INPUT
+                                                                TYPE="radio" NAME="unit1" VALUE="MBq">MBq<INPUT
+                                                                TYPE="radio" NAME="unit1" VALUE="GBq">GBq<INPUT
+                                                                TYPE="radio" NAME="unit1" VALUE="uCi">&micro;Ci<INPUT
+                                                                TYPE="radio" NAME="unit1" VALUE="mCi">mCi</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Activity 2 <INPUT NAME="activity2" TYPE="text" SIZE=6>
+                                                        </td>
+                                                        <td><INPUT TYPE="radio" NAME="unit2" VALUE="kBq"
+                                                                onclick=convertUnit(this.form)>kBq<INPUT TYPE="radio"
+                                                                NAME="unit2" VALUE="MBq"
+                                                                onclick=convertUnit(this.form)>MBq<INPUT TYPE="radio"
+                                                                NAME="unit2" VALUE="GBq"
+                                                                onclick=convertUnit(this.form)>GBq<INPUT TYPE="radio"
+                                                                NAME="unit2" VALUE="uCi"
+                                                                onclick=convertUnit(this.form)>&micro;Ci<INPUT
+                                                                TYPE="radio" NAME="unit2" VALUE="mCi"
+                                                                onclick=convertUnit(this.form)>mCi
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="form-flex"><INPUT NAME="clear" TYPE="reset"
+                                                                class="btn btn-warning" VALUE="Reset"></td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                        </FORM>
+                                        </FORM>
+                                    </TD>
+                                    <TD>
+                                        <FORM NAME="dateadd" class="col-12 col-md-4  formula-display">
+                                            <div class="w3-card-resources w3-container w3-mobile form-flex">
+                                                <table>
+                                                    <tr>
+                                                        <th></th><B>Find the Difference Between Two Dates</B>
+                                                        </th>
+                                                    <tr></tr>
+                                                    <td><INPUT NAME="date1" TYPE="text" value="mm/dd/yyyy" SIZE=12>
                                                     </td>
-                                                    <td><INPUT TYPE="radio" NAME="unit1" VALUE="kBq">kBq<INPUT
-                                                            TYPE="radio" NAME="unit1" VALUE="MBq">MBq<INPUT TYPE="radio"
-                                                            NAME="unit1" VALUE="GBq">GBq<INPUT TYPE="radio" NAME="unit1"
-                                                            VALUE="uCi">&micro;Ci<INPUT TYPE="radio" NAME="unit1"
-                                                            VALUE="mCi">mCi</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Activity 2 <INPUT NAME="activity2" TYPE="text" SIZE=6>
-                                                    </td>
-                                                    <td><INPUT TYPE="radio" NAME="unit2" VALUE="kBq"
-                                                            onclick=convertUnit(this.form)>kBq<INPUT TYPE="radio"
-                                                            NAME="unit2" VALUE="MBq"
-                                                            onclick=convertUnit(this.form)>MBq<INPUT TYPE="radio"
-                                                            NAME="unit2" VALUE="GBq"
-                                                            onclick=convertUnit(this.form)>GBq<INPUT TYPE="radio"
-                                                            NAME="unit2" VALUE="uCi"
-                                                            onclick=convertUnit(this.form)>&micro;Ci<INPUT TYPE="radio"
-                                                            NAME="unit2" VALUE="mCi" onclick=convertUnit(this.form)>mCi
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td><INPUT NAME="clear" TYPE="reset" class="btn btn-warning" VALUE="Reset"></td>
-                                                </tr>
-                                            </table>
-                                        </div>
-                                    </FORM>
-                                    </FORM>
-                                </TD>
-                                <TD>
-                                    <FORM NAME="dateadd">
-                                        <div class="w3-card-resources w3-container w3-mobile">
-                                            <table width="auto">
-                                                <tr>
-                                                    <th></th><B>Find the Difference Between Two Dates</B>
-                                                    </th>
-                                                <tr></tr>
-                                                <td><INPUT NAME="date1" TYPE="text" value="mm/dd/yyyy" SIZE=12>
-                                                </td>
-                                                <td>Date 1</td>
+                                                    <td>Date 1</td>
                             </tr>
                             <tr>
                                 <td><INPUT NAME="date2" TYPE="text" value="mm/dd/yyyy" SIZE=12>
@@ -466,7 +469,8 @@
                                 <td>Date 2</td>
                             </tr>
                             <tr>
-                                <td><input name="calc4" type="button" class="btn btn-outline-success" onclick="deldate(this.form)" value="Calculate">
+                                <td><input name="calc4" type="button" class=" btn btn-primary"
+                                        onclick="deldate(this.form)" value="Calculate">
                                 </td>
                             </tr>
                             <tr>
@@ -478,9 +482,9 @@
                         </form>
                         </TD>
                         <TD>
-                            <FORM NAME="dateadd2">
-                                <div class="w3-card-resources w3-container w3-mobile">
-                                    <table width="auto">
+                            <FORM NAME="dateadd2" class="col-12 col-md-4   formula-display">
+                                <div class="w3-card-resources w3-container w3-mobile form-flex">
+                                    <table>
                                         <th></th><B>Add or Subtract A Number of Days To A
                                             Date</B>
                                         <tr></tr>
@@ -507,16 +511,18 @@
                                 </div>
                             </form>
                         </TD>
-
-                        <!-- #EndEditable -->
-                        <div class="clearcontent"></div>
                     </div>
+
+
+                    <!-- #EndEditable -->
+                    <div class="clearcontent"></div>
                 </div>
-                <div class="w3-half">
-                    <div class="container">
-                        <div class="row">
-                            <div class="links-text-container col-sm-12"">
-                            <nav class=" accordion-wrapper">
+            </div>
+            <div class="container-fluid">
+                <div class="container">
+                    <div class="row">
+                        <div class="links-text-container col-12 offset-md-3 col-md-6">
+                            <nav class="accordion-wrapper">
                                 <h1 class="links-title">Quick Links</h1>
                                 <ul class="ul-reset">
                                     <li>
@@ -613,13 +619,13 @@
                                         </ul>
                                     </li>
                                 </ul>
-                                </nav>
-                            </div>
+                            </nav>
                         </div>
                     </div>
                 </div>
+            </div>
 
-                <!-- <div class="w3-half">
+            <!-- <div class="w3-half">
                 <div class="w3-card-resources w3-container">
                     <h3>Quick Links</h3><br>
                     <ul>
@@ -691,7 +697,7 @@
                         </dt>
                 </div>
             </div> -->
-            </div>
+    </div>
     </div>
     </div>
     </section>
