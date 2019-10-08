@@ -5,8 +5,8 @@
     background: url(../images/cars.JPG);
     background-size: cover;
     background-position: center;
-    -webkit-filter: brightness(.2);
-    filter: brightness(.2);
+    -webkit-filter: brightness(.7);
+    filter: brightness(.7);
 }
 
 .other-navbar {
