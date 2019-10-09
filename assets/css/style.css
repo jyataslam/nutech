@@ -1230,6 +1230,26 @@ a.footer-span:hover {
   font-size: .9rem;
 }
 
+.board-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 3rem;
+}
+
+.board-title {
+  font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
+    padding-bottom: .5rem;
+    font-size: 1.7rem;
+}
+
+.bps-text {
+  padding-top: 2rem;
+  text-align: center;
+}
+
 @media only screen and (max-width: 1024px){
     .nutech-hero-logo {
       width: 900px;
@@ -1316,6 +1336,10 @@ a.footer-span:hover {
 
     .hero-creds-container {
       padding-bottom: 1rem;
+    }
+
+    .board-title {
+      font-size: 1.4rem;
     }
 }
 
@@ -1549,7 +1573,7 @@ a.footer-span:hover {
   }
 
   .info {
-    padding: 60px 0 30px;
+    padding: 60px 0 60px;
   }
 
   .footer-nutech-logo {
