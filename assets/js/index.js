@@ -1,6 +1,10 @@
 /* Change style of navbar on scroll */
 
 $(document).ready(function () {
+	$('#nav-btn').click(function(){
+		$(this).toggleClass('open');
+	});
+
 	$('.nutech-hero-logo').addClass('loaded');
 
 	document.getElementById('nav-btn').addEventListener('click', handleNavAnimationClick);
@@ -79,7 +83,8 @@ handleBodyClick = () => {
 	$(navBtn).removeClass('on');
     $(sidenav).removeClass('sidenav-transform-x');
     $(main).removeClass('main-transform-x');
-    $(body).removeClass('no-scroll');
+	$(body).removeClass('no-scroll');
+	$(navBtn).removeClass('open');
 }
 
 

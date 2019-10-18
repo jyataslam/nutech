@@ -98,6 +98,6 @@
                    and (max-device-width: 812px) 
                    and (orientation: landscape) {
                        .landing-top {
-                           height: 79vh;
+                           height: 100vh;
                        }
                    }
