@@ -1662,3 +1662,57 @@ video {
     top: 0%;
   }
 }
+
+@media only screen and (min-device-width: 320px)
+                   and (max-device-width: 812px) 
+                   and (orientation: landscape){
+  .nutech-hero-logo {
+    width: 350px;
+    padding-bottom: 0;
+    bottom: 0;
+  }
+
+  .hero-creds-img {
+    height: 40px;
+  }
+
+  .hero-creds-container {
+    padding-bottom: .3rem;
+  }
+
+  .hero-creds-title {
+    font-size: .875rem;
+  }
+
+  .creds-container {
+    top: 6%;
+  }
+
+  .phone-number-location, .phone-number {
+    font-size: 1rem;
+  }
+
+  .nav-menu {
+    overflow-y: scroll;
+  }
+
+  .new-link-icon {
+    width: 140px;
+  }
+
+  .commish-photo {
+    height: 180px;
+  }
+
+  .commish-text-flex {
+    order: 2;
+  }
+
+  .commish-photo-container {
+    order: 1;
+  }
+
+  .phone-container {
+    width: 33.3%;
+  }
+}
