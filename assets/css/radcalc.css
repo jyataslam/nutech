@@ -174,5 +174,9 @@ width:100%;
                        .offset-md-3 {
                            margin-left: 0%;
                        }
+
+                       .calc-header {
+                           margin-top: -6rem;
+                       }
                    }
 
