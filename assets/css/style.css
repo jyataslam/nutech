@@ -1666,6 +1666,10 @@ video {
 @media only screen and (min-device-width: 320px)
                    and (max-device-width: 812px) 
                    and (orientation: landscape){
+  .hero, .doctor {
+    background-attachment: scroll;
+  }
+
   .nutech-hero-logo {
     width: 350px;
     padding-bottom: 0;
@@ -1686,6 +1690,7 @@ video {
 
   .creds-container {
     top: 6%;
+    max-width: 636px;
   }
 
   .phone-number-location, .phone-number {
