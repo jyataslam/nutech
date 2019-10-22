@@ -1,3 +1,13 @@
+<?php
+// We need to use sessions, so you should always start sessions using the below code.
+session_start();
+// If the user is not logged in redirect to the login page...
+if (!isset($_SESSION['loggedin'])) {
+	header('Location: ../../login.html');
+	exit();
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <title>Pediatric Dose Calculations</title>
@@ -26,7 +36,7 @@
 <meta property="og:title" content="NuTech, Inc.">
 <meta property="og:description" content="Radiopharmacy Services">
 <meta property="og:image" content="http://nutech.huntingtondigitaloc.com/assets/images/og-image-nutech.png">
-<meta property="og:url" content="https://nutech.huntingtondigitaloc.com">
+<meta property="og:url" content="https://www.nutechrx.com">
 <meta property="og:site_name" content="NuTech, Inc.">
 <meta property="og:type" content="website">
 <!-- End of Social Tags -->
@@ -41,11 +51,11 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-<link rel="stylesheet" href="./assets/css/company.css" type="text/css">
+<link rel="stylesheet" type="text/css" href="../css/style.css">
+<link rel="stylesheet" href="../css/company.css" type="text/css">
 
-<link rel="stylesheet" type="text/css" href="assets/css/pedcalc.css">
-<link rel="stylesheet" href="./assets/css/ce.css" type="text/css">
+<link rel="stylesheet" type="text/css" href="../css/pedcalc.css">
+<link rel="stylesheet" href="../css/ce.css" type="text/css">
 
 
 <script src="https://kit.fontawesome.com/96a8611a1e.js"></script>
@@ -65,78 +75,84 @@
 </head>
 
 <BODY>
-	<!-- Navbar (sit on top) -->
-	<div class="w3-top other-navbar">
-		<div class="w3-bar myNavbar" id="myNavbar">
-			<a id="nav-btn" class="w3-bar-item w3-button w3-hover-black w3-hide-large w3-right"
-				href="javascript:void(0);" title="Toggle Navigation Menu">
-				<i class="fa fa-bars"></i>
-			</a>
+<div class="w3-top">
+        <div class="w3-bar myNavbar" id="myNavbar">
+            <a id="nav-btn" class="w3-bar-item w3-button w3-hover-black w3-hide-large w3-right"
+                href="javascript:void(0);" title="Toggle Navigation Menu">
+                <!-- <i class="fa fa-bars"></i> -->
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
 
-			<a class="logo-image" href="./index.html">
-				<img src="assets/svg/LOGOblutrans.svg" class="img-fluid nutech-navbar-logo"></a>
-			<a href="./resources.html" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-right">
-				Resources</a>
-			<a href="./services.html" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-right">
-				Our Services</a>
-			<a href="./products.html" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-right">
-				Our Products</a>
-			<a href="./team.html" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-right">
-				Our Team</a>
-			<a href="./media.html" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-right">
-				Media</a>
-			<a href="./company.html" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-right">
-				Our Company</a>
-			<a href="./testimonials.html"
-				class="w3-bar-item w3-button w3-bar-item w3-button w3-hide-small w3-hide-medium w3-right">Testimonials</a>
-			<a href="./index.html"
-				class="w3-bar-item w3-button w3-bar-item w3-button w3-hide-small w3-hide-medium w3-right">Home</a>
-		</div>
+            <a class="logo-image" href="./index.html">
+                <img src="./assets/svg/LOGOblutrans.svg" class="img-fluid nutech-navbar-logo"></a>
+            <a href="./resources.html" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-right">
+                Resources</a>
+            <a href="./services.html" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-right">
+                Our Services</a>
+            <a href="./products.html" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-right">
+                Our Products</a>
+            <a href="./team.html" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-right">
+                Our Team</a>
+            <a href="./media.html" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-right">
+                Media</a>
+            <a href="./company.html" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-right">
+                Our Company</a>
+            <a href="./testimonials.html"
+                class="w3-bar-item w3-button w3-bar-item w3-button w3-hide-small w3-hide-medium w3-right">Testimonials</a>
+            <a href="./index.html"
+                class="w3-bar-item w3-button w3-bar-item w3-button w3-hide-small w3-hide-medium w3-right">Home</a>
+        </div>
 
-		<!-- Create Side Nav when open -->
-		<div id="nav-menu" class="nav-menu">
-			<div class="container">
-				<div class="row">
-					<ul class="nav-menu-list">
-						<li class="nav-menu-list-item">
-							<img class="sidenav-logo" src="./assets/svg/LOGOblutrans2.svg" alt="NuTech Logo">
-						</li>
-						<li class="nav-menu-list-item">
-							<a href="./index.html" class="w3-bar-item w3-button">Home</a>
-						</li>
-						<hr class="sidenav-hr">
-						<li class="nav-menu-list-item">
-							<a href="./testimonials.html" class="w3-bar-item w3-button">Testimonials</a>
-						</li>
-						<hr class="sidenav-hr">
-						<li class="nav-menu-list-item">
-							<a href="./company.html" class="w3-bar-item w3-button">Company</a>
-						</li>
-						<hr class="sidenav-hr">
-						<li class="nav-menu-list-item">
-							<a href="./media.html" class="w3-bar-item w3-button">Media</a>
-						</li>
-						<hr class="sidenav-hr">
-						<li class="nav-menu-list-item">
-							<a href="./team.html" class="w3-bar-item w3-button">Team</a>
-						</li>
-						<hr class="sidenav-hr">
-						<li class="nav-menu-list-item">
-							<a href="./products.html" class="w3-bar-item w3-button">Products</a>
-						</li>
-						<hr class="sidenav-hr">
-						<li class="nav-menu-list-item">
-							<a href="./services.html" class="w3-bar-item w3-button">Services</a>
-						</li>
-						<hr class="sidenav-hr">
-						<li class="nav-menu-list-item">
-							<a href="./resources.html" class="w3-bar-item w3-button">Resources</a>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</div>
+        <!-- Create Side Nav when open -->
+        <div id="nav-menu" class="nav-menu">
+            <div class="container">
+                <div class="row">
+                    <ul class="nav-menu-list">
+                        <li class="nav-menu-list-item">
+                            <img class="sidenav-logo" src="./assets/svg/LOGOblutrans2.svg" alt="NuTech Logo">
+                        </li>
+                        <li class="nav-menu-list-item">
+                            <a href="./index.html" class="w3-bar-item w3-button">Home</a>
+                        </li>
+                        <hr class="sidenav-hr">
+                        <li class="nav-menu-list-item">
+                            <a href="./testimonials.html" class="w3-bar-item w3-button">Testimonials</a>
+                        </li>
+                        <hr class="sidenav-hr">
+                        <li class="nav-menu-list-item">
+                            <a href="./company.html" class="w3-bar-item w3-button">Company</a>
+                        </li>
+                        <hr class="sidenav-hr">
+                        <li class="nav-menu-list-item">
+                            <a href="./media.html" class="w3-bar-item w3-button">Media</a>
+                        </li>
+                        <hr class="sidenav-hr">
+                        <li class="nav-menu-list-item">
+                            <a href="./team.html" class="w3-bar-item w3-button">Team</a>
+                        </li>
+                        <hr class="sidenav-hr">
+                        <li class="nav-menu-list-item">
+                            <a href="./products.html" class="w3-bar-item w3-button">Products</a>
+                        </li>
+                        <hr class="sidenav-hr">
+                        <li class="nav-menu-list-item">
+                            <a href="./services.html" class="w3-bar-item w3-button">Services</a>
+                        </li>
+                        <hr class="sidenav-hr">
+                        <li class="nav-menu-list-item">
+                            <a href="./resources.html" class="w3-bar-item w3-button">Resources</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
 
 	<!-- Calculators -->
 	<div class="background">
@@ -316,120 +332,5 @@
 
 </body>
 
-<!-- #EndTemplate -->
 
 </html>
-
-
-
-<!-- <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml"> -->
-
-<!-- 
-<head>
-<title>NuTech Sponsored CE</title>
-
-<meta name="description" content="CE from NuTech and SNM" />
-
-<meta name="keywords" content="CNMT, CE, continuing education, nuclear, nuclear pharmacy, pharmacy, radiopharmacy, radiopharmaceutical, health physics, tyler, college station, wichita falls, Danny Allen, NuTech, nuclear medicine" />
-<meta http-equiv="imagetoolbar" content="false" />
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta http-equiv="Content-Language" content="en-us" />
-<link rel="stylesheet" type="text/css" href="../style.css" />
-<link rel="stylesheet" href="../Scripts/lightbox.css" type="text/css" media="screen" />
-<script type="text/javascript" src="../Scripts/lightbox.js"></script>
-
-</head>
-
-<body>
-
-<div class="wrapper row1">
-<div id="global">
-<ul>
-<li><a href="../index.htm">Home</a></li>
-<li><a href="../industry_links/industry_links.html">Links</a></li>
-<li><a href="../contact/contact.htm">Contact</a> </li>
-</ul>
-</div>
-</div>
-
-<div class="wrapper row2">
-<div id="header" style="left: 0px; top: 0px; width: 941px">
-	<img alt="" height="104" src="http://nutechrx.com/Templates/NuTech%20Banner.png" width="896" />
-</div>
-</div>
-
-<div class="wrapper row3">
-<div id="mainnav">
-<ul>
-<li><a href="../company/company.htm">Our Company</a></li>
-	<li><a href="../professionals/professionals.htm">Our Professionals</a></li>
-<li><a href="../products/products.htm">Our Products</a></li>
-<li><a href="../services/services.htm">Our Services</a></li>
-<li><a href="../clients/clients.htm">Our Clients</a></li>
-</ul>
-</div>
-</div>
-
-<div class="wrapper row4">
-<div id="content">
-<div class="contentleft2">
-<h1>NuTech Sponsored Continuing Education</h1>
-<p>Thank you for your support of <strong><em>NuTech</em></strong>.&nbsp; 
-			Click the button below to access CE courses.</p>
-
-<form name="snmmi" action="http://www.snmmi.org/Education/UPPI.aspx" method="post" target="_snmmi" >
-<div style="text-align: center">
-<br />
-<input type="hidden" name="promocode" value="UPPI64"><br />
-<input type="image" src="images/SNMMILearningCenterButton.jpg" title="Go to SNMMI Courses" value="Go to SNMMI Courses">
-<input type="image" src="../images/learningcenter.jpg" value="Go to SNM Courses" alt="Go to Learning Center" name="SNM" width="159" height="81">
-</div>
-</form>
-			
-			
-			
-			<p>&nbsp;</p>
-	<p>Email 
-			<a href="mailto:ce@nutechrx.com?subject=Question About NuTech CE">ce@nutechrx.com</a> if you have any questions.</p>
-
-</div>
-<div class="contentright">
-<h2>Quick Links</h2>
-<h5>NucMed Calculators</h5>
-	<ul>
-		<li><a href="../RadCalc/RadCalc.htm">Radioactivity Calculator</a></li>
-		<li><a href="../PedCalc/PedCalc.htm">Pediatric Dosage Calculator</a></li>
-		<li><a href="../MAACalc/MAAPartCalc.htm">MAA Dose Particle Calculator</a></li>
-	</ul>
-	<h5>Patient Information</h5>
-	<ul>
-		<li><a href="../Tools/Myocardial_Perfusion.pdf">Myocardial Perfusion</a></li>
-		<li><a href="../Tools/Skeletal_Imaging.pdf">Skeletal Imaging</a></li>
-		<li><a href="../Tools/Radioiodine_Therapy.pdf">Radioiodine Therapy</a></li>
-		<li><a href="../Tools/Terapia_de_Radioiodine.pdf">Terapia de Radioiodine</a></li>
-		<li><a href="http://interactive.snm.org/docs/whatisnucmed.pdf">What is 
-		Nuclear Medicine</a></li>
-	</ul>
-</div>
-<div class="clearcontent"></div>
-</div>
-</div>
-
-<div class="wrapper row5">
-<div id="footer">
-<ul>
-<li><a href="../index.htm">Home</a></li>
-<li><a href="../industry_links/industry_links.html">Links</a></li>
-<li><a href="../contact/contact.htm">Contact</a> </li>
-</ul>
-<p>NuTech, Inc. &copy; 2017 | All Rights Reserved | Design by <a href="http://www.rtbwizards.com">RTBWizards.com</a></p>
-<p><br />
-&nbsp;&nbsp;&nbsp; </p>
-</div>
-</div>
-
-</body>
-
-
-</html> -->
