@@ -75,7 +75,7 @@ if (!isset($_SESSION['loggedin'])) {
 </head>
 
 <BODY>
-<div class="w3-top">
+<div class="w3-top other-navbar">
         <div class="w3-bar myNavbar" id="myNavbar">
             <a id="nav-btn" class="w3-bar-item w3-button w3-hover-black w3-hide-large w3-right"
                 href="javascript:void(0);" title="Toggle Navigation Menu">
@@ -88,23 +88,23 @@ if (!isset($_SESSION['loggedin'])) {
                 <span></span>
             </a>
 
-            <a class="logo-image" href="./index.html">
-                <img src="./assets/svg/LOGOblutrans.svg" class="img-fluid nutech-navbar-logo"></a>
-            <a href="./resources.html" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-right">
+            <a class="logo-image" href="../../index.html">
+                <img src="../svg/LOGOblutrans.svg" class="img-fluid nutech-navbar-logo"></a>
+            <a href="../../resources.html" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-right">
                 Resources</a>
-            <a href="./services.html" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-right">
+            <a href="../../services.html" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-right">
                 Our Services</a>
-            <a href="./products.html" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-right">
+            <a href="../../products.html" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-right">
                 Our Products</a>
-            <a href="./team.html" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-right">
+            <a href="../../team.html" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-right">
                 Our Team</a>
-            <a href="./media.html" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-right">
+            <a href="../../media.html" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-right">
                 Media</a>
-            <a href="./company.html" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-right">
+            <a href="../../company.html" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-right">
                 Our Company</a>
-            <a href="./testimonials.html"
+            <a href="../../testimonials.html"
                 class="w3-bar-item w3-button w3-bar-item w3-button w3-hide-small w3-hide-medium w3-right">Testimonials</a>
-            <a href="./index.html"
+            <a href="../../index.html"
                 class="w3-bar-item w3-button w3-bar-item w3-button w3-hide-small w3-hide-medium w3-right">Home</a>
         </div>
 
@@ -114,38 +114,38 @@ if (!isset($_SESSION['loggedin'])) {
                 <div class="row">
                     <ul class="nav-menu-list">
                         <li class="nav-menu-list-item">
-                            <img class="sidenav-logo" src="./assets/svg/LOGOblutrans2.svg" alt="NuTech Logo">
+                            <img class="sidenav-logo" src="../svg/LOGOblutrans2.svg" alt="NuTech Logo">
                         </li>
                         <li class="nav-menu-list-item">
-                            <a href="./index.html" class="w3-bar-item w3-button">Home</a>
-                        </li>
-                        <hr class="sidenav-hr">
-                        <li class="nav-menu-list-item">
-                            <a href="./testimonials.html" class="w3-bar-item w3-button">Testimonials</a>
+                            <a href=".../../index.html" class="w3-bar-item w3-button">Home</a>
                         </li>
                         <hr class="sidenav-hr">
                         <li class="nav-menu-list-item">
-                            <a href="./company.html" class="w3-bar-item w3-button">Company</a>
+                            <a href="../../testimonials.html" class="w3-bar-item w3-button">Testimonials</a>
                         </li>
                         <hr class="sidenav-hr">
                         <li class="nav-menu-list-item">
-                            <a href="./media.html" class="w3-bar-item w3-button">Media</a>
+                            <a href="../../company.html" class="w3-bar-item w3-button">Company</a>
                         </li>
                         <hr class="sidenav-hr">
                         <li class="nav-menu-list-item">
-                            <a href="./team.html" class="w3-bar-item w3-button">Team</a>
+                            <a href="../../media.html" class="w3-bar-item w3-button">Media</a>
                         </li>
                         <hr class="sidenav-hr">
                         <li class="nav-menu-list-item">
-                            <a href="./products.html" class="w3-bar-item w3-button">Products</a>
+                            <a href="../../team.html" class="w3-bar-item w3-button">Team</a>
                         </li>
                         <hr class="sidenav-hr">
                         <li class="nav-menu-list-item">
-                            <a href="./services.html" class="w3-bar-item w3-button">Services</a>
+                            <a href="../../products.html" class="w3-bar-item w3-button">Products</a>
                         </li>
                         <hr class="sidenav-hr">
                         <li class="nav-menu-list-item">
-                            <a href="./resources.html" class="w3-bar-item w3-button">Resources</a>
+                            <a href="../../services.html" class="w3-bar-item w3-button">Services</a>
+                        </li>
+                        <hr class="sidenav-hr">
+                        <li class="nav-menu-list-item">
+                            <a href="../../resources.html" class="w3-bar-item w3-button">Resources</a>
                         </li>
                     </ul>
                 </div>
@@ -302,7 +302,7 @@ if (!isset($_SESSION['loggedin'])) {
 		<div class="container">
 			<div class="row">
 				<div class="footer-content-container col-sm-12">
-					<img class="footer-nutech-logo" src="./assets/svg/LOGOblutrans.svg" alt="NuTech Logo">
+					<img class="footer-nutech-logo" src="../svg/LOGOblutrans.svg" alt="NuTech Logo">
 					<div class="footer-nutech-location-container">
 						<div class="footer-location-inner">
 							<p class="footer-location-header">Tyler, TX</p>
