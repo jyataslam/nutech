@@ -15,10 +15,10 @@ if (!isset($_SESSION['loggedin'])) {
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-<link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
-<link rel="manifest" href="./assets/favicon/site.webmanifest">
+<link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../favicon/favicon-16x16.png">
+<link rel="manifest" href="../favicon/site.webmanifest">
 
 <!-- social meta tags -->
 <meta name="description" content="Radiopharmacy Services">
@@ -61,7 +61,7 @@ if (!isset($_SESSION['loggedin'])) {
 <script src="https://kit.fontawesome.com/96a8611a1e.js"></script>
 
 <!-- #BeginEditable "description" -->
-<meta name="description" content="Pediatric Dose Calculations" />
+<meta name="description" content="Continuing Education" />
 <!-- #EndEditable -->
 <!-- #BeginEditable "keywords" -->
 <meta name="keywords"
@@ -177,7 +177,7 @@ if (!isset($_SESSION['loggedin'])) {
 								<div style="text-align: center">
 								<br />
 								<input type="hidden" name="promocode" value="UPPI64"><br />
-								<input type="image" src="assets/images/snmmi.png" title="Go to SNMMI Courses" value="Go to SNMMI Courses">
+								<input type="image" src="../images/snmmi.png" title="Go to SNMMI Courses" value="Go to SNMMI Courses">
 								<!-- <input type="image" src="../images/learningcenter.jpg" value="Go to SNM Courses" alt="Go to Learning Center" name="SNM" width="159" height="81"> -->
 								</div>
 								</form>
@@ -195,27 +195,27 @@ if (!isset($_SESSION['loggedin'])) {
 										<li>
 											<a>Calculators</a>
 											<ul class="ul-reset">
-												<li><a href="./radcalc.html" target="_blank">Radioactivity</a></li>
-												<li><a href="./pedcalc.html" target="_blank">Pediatric Dosage</a></li>
-												<li><a href="./maacalc.html" target="_blank">MAA Dose Particle</a></li>
+												<li><a href="../../radcalc.html" target="_blank">Radioactivity</a></li>
+												<li><a href="../../pedcalc.html" target="_blank">Pediatric Dosage</a></li>
+												<li><a href="../../maacalc.html" target="_blank">MAA Dose Particle</a></li>
 											</ul>
 										</li>
 										<li>
 											<a>Patient Information</a>
 											<ul class="ul-reset">
-												<li><a href="./assets/documents/Myocardial_Perfusion.pdf"
+												<li><a href="../../assets/documents/Myocardial_Perfusion.pdf"
 														target="_blank">Myocardial
 														Perfusion</a></li>
-												<li><a href="./assets/documents/Radioiodine_Therapy.pdf"
+												<li><a href="../../assets/documents/Radioiodine_Therapy.pdf"
 														target="_blank">Radioiodine
 														Therapy</a>
 												</li>
-												<li><a href="./assets/documents/Terapia_de_Radioiodine.pdf"
+												<li><a href="../../assets/documents/Terapia_de_Radioiodine.pdf"
 														target="_blank">Terapia
 														de
 														Radioiodine</a>
 												</li>
-												<li><a href="./compounded.html" target="_blank">Compounded Q&A</a></li>
+												<li><a href="../../compounded.html" target="_blank">Compounded Q&A</a></li>
 												<li><a href="http://www.snmmi.org/AboutSNMMI/Content.aspx?ItemNumber=5648"
 														target="_blank">What
 														is
@@ -328,7 +328,7 @@ if (!isset($_SESSION['loggedin'])) {
 	<script src="https://code.jquery.com/jquery-3.4.1.min.js"
 		integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 
-	<script type="text/javascript" src="assets/js/index.js"></script>
+	<script type="text/javascript" src="../js/index.js"></script>
 
 </body>
 
