@@ -43,10 +43,10 @@ if ($stmt->num_rows > 0) {
 		$_SESSION['id'] = $id;
 		header('Location: ce.php');
 	} else {
-		echo 'Incorrect password!';
+		echo 'Incorrect Username or Password';
 	}
 } else {
-	echo 'Incorrect username!';
+	echo 'Incorrect Username or Password';
 }
 $stmt->close();
 ?>
