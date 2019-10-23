@@ -1,0 +1,27 @@
+.login {
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+}
+
+.login input{
+    border: 1px #969696 solid;
+}
+
+.lastInput{
+    margin: 10px;
+}
+
+.emailP{
+    width:100%;
+    text-align: center;
+}
+
+@media only screen and (max-width: 414px){
+    .login form {
+        display:flex;
+        flex-direction:column;
+        align-items: center;
+    }
+}

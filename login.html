@@ -40,6 +40,7 @@
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 <link rel="stylesheet" href="./assets/css/company.css" type="text/css">
+<link rel="stylesheet" href="./assets/css/login.css" type="text/css">
 <script src="https://kit.fontawesome.com/96a8611a1e.js"></script>
 
 
@@ -137,6 +138,9 @@
         <section id="company" class="company">
             <div class="container">
                 <div class="row">
+                    <h1 class="col-sm-12 company-header1 calc-header">Continuing Education</h1>
+                </div>
+                <div class="row">
                     <div class="login">
                         <h1>Login</h1>
                         <form action="./assets/php/authenticate.php" method="post">
@@ -148,11 +152,18 @@
                                 <i class="fas fa-lock"></i>
                             </label>
                             <input type="password" name="password" placeholder="Password" id="password" required>
-                            <input type="submit" value="Login">
+                            <input class="btn btn-outline-primary offset-4 offset-md-0 lastInput" type="submit"
+                                value="Login">
+                            <span class="error">
+                                <p id="name_error"></p>
+                            </span>
                         </form>
                     </div>
                 </div>
             </div>
+            <p class="emailP">Email
+                <a href="mailto:ce@nutechrx.com?subject=Question About NuTech CE">ce@nutechrx.com</a> if you have any
+                questions.</p>
         </section>
 
 
@@ -179,7 +190,8 @@
 
                         </div>
                         <p class="footer-copyright">NuTech, Inc. &copy; All Rights Reserved. Powered by <a
-                                class="footer-span" href="https://www.huntingtondigitaloc.com" target="_blank">Huntington Digital.</a>
+                                class="footer-span" href="https://www.huntingtondigitaloc.com"
+                                target="_blank">Huntington Digital.</a>
                     </div>
                 </div>
             </div>
