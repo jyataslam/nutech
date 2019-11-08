@@ -1,8 +1,8 @@
 function calcdecay(form) {
 
-    var act = parseInt(form.initact.value);
+    var act = parseFloat(form.initact.value);
     var act2;
-    var t = parseInt(form.decayt.value);
+    var t = parseFloat(form.decayt.value);
     if (form.decayu[0].checked) {
         if (document.isoform2.timeunit.value == "m")
             t = t * (1 / 60)
