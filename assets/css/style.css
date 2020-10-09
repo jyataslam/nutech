@@ -1240,9 +1240,14 @@ a.footer-span:hover {
   padding-bottom: .8rem;
 }
 
-.footer-location-header {
+.footer-location-header, .footer-location-address-top, .footer-location-address-bottom {
   margin-bottom: 0;
   font-size: .9rem;
+}
+
+.footer-location-header {
+  font-weight: bolder;
+  font-size: 1.4rem;
 }
 
 .board-container {
