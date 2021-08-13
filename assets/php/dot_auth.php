@@ -39,7 +39,7 @@ if ($stmt->num_rows > 0) {
 		$_SESSION['loggedin'] = TRUE;
 		$_SESSION['name'] = $username;
 		$_SESSION['id'] = $id;
-		header('Location: ce.php');
+		header('Location: dot.php');
 	} else {
 		echo 'Incorrect Username or Password';
 	}
