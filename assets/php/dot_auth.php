@@ -17,7 +17,7 @@ if ( !isset($username, $shaPassword) ) {
 }
 
 // Prepare our SQL, preparing the SQL statement will prevent SQL injection.
-if ($stmt = $conn->prepare('SELECT id, password FROM accounts WHERE username = ?')) {
+if ($stmt = $conn->prepare('SELECT id, password FROM dottraining WHERE username = ?')) {
 	// Bind parameters (s = string, i = int, b = blob, etc), in our case the username is a string so we use "s"
 	$stmt->bind_param('s', $username);
 	$stmt->execute();

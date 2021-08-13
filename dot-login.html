@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<title>NuTech, Inc</title>
+<title>DOT Training Login | NuTech, Inc</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -11,7 +11,7 @@
 <link rel="manifest" href="./assets/favicon/site.webmanifest">
 
 <!-- social meta tags -->
-<meta name="description" content="Radiopharmacy Services">
+<meta name="description" content="DOT Training Login">
 <meta name="image" content="http://www.nutechrx.com/assets/images/og-image-nutech.png">
 <!-- Schema.org for Google -->
 <meta itemprop="name" content="NuTech, Inc.">
@@ -23,10 +23,10 @@
 <meta name="twitter:description" content="Radiopharmacy Services">
 <meta name="twitter:image:src" content="http://www.nutechrx.com/assets/images/og-image-nutech.png">
 <!-- Open Graph general (Facebook, Pinterest & Google+) -->
-<meta property="og:title" content="NuTech, Inc.">
-<meta property="og:description" content="Radiopharmacy Services">
+<meta property="og:title" content="DOT Training Login | NuTech, Inc.">
+<meta property="og:description" content="Login for DOT Training">
 <meta property="og:image" content="http://www.nutechrx.com/assets/images/og-image-nutech.png">
-<meta property="og:url" content="https://www.nutechrx.com/login.html">
+<meta property="og:url" content="https://www.nutechrx.com/dot-login.html">
 <meta property="og:site_name" content="NuTech, Inc.">
 <meta property="og:type" content="website">
 <!-- End of Social Tags -->
@@ -41,6 +41,7 @@
 <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 <link rel="stylesheet" href="./assets/css/company.css" type="text/css">
 <link rel="stylesheet" href="./assets/css/login.css" type="text/css">
+<link rel="stylesheet" href="./assets/css/dot.css" type="text/css">
 <script src="https://kit.fontawesome.com/96a8611a1e.js"></script>
 
 
@@ -138,26 +139,34 @@
         <section id="company" class="company">
             <div class="container">
                 <div class="row">
-                    <h1 class="col-sm-12 company-header1 calc-header">Continuing Education</h1>
+                    <h1 class="col-sm-12 company-header1 calc-header">DoT Training</h1>
                 </div>
                 <div class="row">
                     <div class="login">
-                        <h1>Login</h1>
-                        <form action="./assets/php/authenticate.php" method="post">
-                            <label for="username">
-                                <i class="fas fa-user"></i>
-                            </label>
-                            <input type="text" name="username" placeholder="Username" id="username" required>
-                            <label for="password">
-                                <i class="fas fa-lock"></i>
-                            </label>
-                            <input type="password" name="password" placeholder="Password" id="password" required>
-                            <input class="btn btn-outline-primary offset-4 offset-md-0 lastInput" type="submit"
-                                value="Login">
-                            <span class="error">
-                                <p id="name_error"></p>
-                            </span>
-                        </form>
+
+                        <div class="col-sm-12">
+                            <h1 class="dot-header">LOGIN</h1>
+                            <form action="./assets/php/dot_auth.php" method="post">
+                                <div class="form-input-container">
+                                    <label for="username">
+                                        <i class="fas fa-user"></i>
+                                    </label>
+                                    <input type="text" name="username" placeholder="Username" id="username" required>
+                                </div>
+                                <div class="form-input-container">
+                                    <label for="password">
+                                        <i class="fas fa-lock"></i>
+                                    </label>
+                                    <input type="password" name="password" placeholder="Password" id="password"
+                                        required>
+                                </div>
+                                <input class="btn btn-outline-primary offset-4 offset-md-0 lastInput" type="submit"
+                                    value="Login">
+                                <span class="error">
+                                    <p id="name_error"></p>
+                                </span>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
