@@ -44,3 +44,16 @@ form .btn:hover {
 .dot-header {
     text-align: center;
 }
+
+.dot-section-header {
+    padding-bottom: 1rem;
+}
+
+.dot-info-container {
+    padding: 3rem;
+}
+
+.dot-info-container li {
+    margin-bottom: 1rem;
+    text-decoration: underline;
+}

@@ -36,7 +36,7 @@ if (!isset($_SESSION['loggedin'])) {
 <meta property="og:title" content="NuTech, Inc.">
 <meta property="og:description" content="Radiopharmacy Services">
 <meta property="og:image" content="http://www.nutechrx.com/assets/images/og-image-nutech.png">
-<meta property="og:url" content="https://www.nutechrx.com">
+<meta property="og:url" content="https://www.nutechrx.com/dot-login.html">
 <meta property="og:site_name" content="NuTech, Inc.">
 <meta property="og:type" content="website">
 <!-- End of Social Tags -->
@@ -51,11 +51,12 @@ if (!isset($_SESSION['loggedin'])) {
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" type="text/css" href="./assets/css/style.css">
-<link rel="stylesheet" href="./assets/css/company.css" type="text/css">
+<link rel="stylesheet" type="text/css" href="../css/style.css">
+<link rel="stylesheet" href="../css/company.css" type="text/css">
 
-<link rel="stylesheet" type="text/css" href="./assets/css/pedcalc.css">
-<link rel="stylesheet" href="./assets/css/ce.css" type="text/css">
+<link rel="stylesheet" type="text/css" href="../css/pedcalc.css">
+<link rel="stylesheet" href="../css/ce.css" type="text/css">
+<link rel="stylesheet" href="../css/dot.css" type="text/css">
 
 
 <script src="https://kit.fontawesome.com/96a8611a1e.js"></script>
@@ -88,7 +89,7 @@ if (!isset($_SESSION['loggedin'])) {
                 <span></span>
             </a>
 
-            <a class="logo-image" href="./index.html">
+            <a class="logo-image" href="../../index.html">
                 <img src="../svg/LOGOblutrans.svg" class="img-fluid nutech-navbar-logo"></a>
             <a href="../../resources.html" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-right">
                 Resources</a>
@@ -166,7 +167,31 @@ if (!isset($_SESSION['loggedin'])) {
             <div class="container">
                 <div class="row">
                     <div class="col-sm-12 dot-container">
-                        <h1 class="dot-header">Training Videos</h1>
+                        <h1 class="dot-header">DoT Training Material</h1>
+                    </div>
+                    <div class="col-md-12 dot-info-container">
+                        <h2 class="dot-section-header">Documents</h2>
+                        <ul>
+                            <li>
+                                <a href="./assets/documents/air-transport-test.pdf">Function Specific Training For
+                                    HAZMAT Employees Responsible For The Shipment Of HAZMAT By Air</a>
+                            </li>
+                            <li>
+                                <a href="./assets/documents/customer-test.pdf">D.O.T. HAZMAT Employee Training Test</a>
+                            </li>
+                            <li>
+                                <a href="./assets/documents/regular-program.ppt">U.S. Department of Transportation
+                                    "HAZMAT Employee" Training for Nuclear Medicine Technologists PowerPoint
+                                    Presentation</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-12 dot-info-container">
+                        <h2 class="dot-section-header">Videos</h2>
+                        <video controls controlsList="nodownload">
+                            <source src="./assets/videos/safety-video-dot.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
                     </div>
                 </div>
             </div>
