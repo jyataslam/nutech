@@ -173,14 +173,14 @@ if (!isset($_SESSION['loggedin'])) {
                         <h2 class="dot-section-header">Documents</h2>
                         <ul>
                             <li>
-                                <a href="./assets/documents/air-transport-test.pdf">Function Specific Training For
+                                <a href="../documents/air-transport-test.pdf">Function Specific Training For
                                     HAZMAT Employees Responsible For The Shipment Of HAZMAT By Air</a>
                             </li>
                             <li>
-                                <a href="./assets/documents/customer-test.pdf">D.O.T. HAZMAT Employee Training Test</a>
+                                <a href="../documents/customer-test.pdf">D.O.T. HAZMAT Employee Training Test</a>
                             </li>
                             <li>
-                                <a href="./assets/documents/regular-program.ppt">U.S. Department of Transportation
+                                <a href="../documents/regular-program.ppt">U.S. Department of Transportation
                                     "HAZMAT Employee" Training for Nuclear Medicine Technologists PowerPoint
                                     Presentation</a>
                             </li>
@@ -189,7 +189,7 @@ if (!isset($_SESSION['loggedin'])) {
                     <div class="col-md-12 dot-info-container">
                         <h2 class="dot-section-header">Videos</h2>
                         <video controls controlsList="nodownload">
-                            <source src="./assets/videos/safety-video-dot.mp4" type="video/mp4">
+                            <source src="../videos/safety-video-dot.mp4" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
                     </div>
