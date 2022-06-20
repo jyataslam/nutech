@@ -131,7 +131,7 @@
         </div>
 
     </div>
- 
+
     <!-- Background -->
     <section id="background" class="background">
         <div id="landing-top" class="landing-top"></div>
@@ -142,22 +142,25 @@
                 </div>
                 <div class="row">
                     <div class="login">
-                        <h1>Login</h1>
-                        <form action="./assets/php/authenticate.php" method="post">
-                            <label for="username">
-                                <i class="fas fa-user"></i>
-                            </label>
-                            <input type="text" name="username" placeholder="Username" id="username" required>
-                            <label for="password">
-                                <i class="fas fa-lock"></i>
-                            </label>
-                            <input type="password" name="password" placeholder="Password" id="password" required>
-                            <input class="btn btn-outline-primary offset-4 offset-md-0 lastInput" type="submit"
-                                value="Login">
-                            <span class="error">
-                                <p id="name_error"></p>
-                            </span>
-                        </form>
+                        <h1>NuTech Sponsored Continuing Education</h1>
+                        <br>
+                        <div class="w3-card-resources w3-container w3-mobile ceDiv">
+                            <p>
+                                Thank you for your support of NuTech. Click the button below to access CE courses.
+                            </p>
+                            <div class="ceLinkContainer">
+                                <form name="snmmi" action="http://www.snmmi.org/Education/UPPI.aspx" method="post"
+                                    target="_snmmi">
+                                    <div style="text-align: center">
+                                        <br />
+                                        <input type="hidden" name="promocode" value="UPPI64"><br />
+                                        <input type="image" src="assets/images/snmmi.png" title="Go to SNMMI Courses"
+                                            value="Go to SNMMI Courses">
+                                        <!-- <input type="image" src="images/learningcenter.jpg" value="Go to SNM Courses" alt="Go to Learning Center" name="SNM" width="159" height="81"> -->
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

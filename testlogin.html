@@ -49,6 +49,8 @@
     content="CNMT, CE, continuing education, nuclear, nuclear pharmacy, pharmacy, radiopharmacy, radiopharmaceutical, health physics, tyler, college station, wichita falls, Danny Allen, NuTech, nuclear medicine" />
 <!-- #EndEditable -->
 
+<!-- Login widget -->
+<script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
 
 <body>
@@ -142,8 +144,11 @@
                 </div>
                 <div class="row">
                     <div class="login">
-                        <h1>Login</h1>
-                        <form action="./assets/php/authenticate.php" method="post">
+                        <h2>Click the button below to login:</h2>
+                        <!-- <div data-netlify-identity-menu></div> -->
+                        <button class="btn btn-outline-primary offset-4 offset-md-0 lastInput" data-netlify-identity-button></button class="login">
+                        <!-- PHP AUTHENTICATION -->
+                        <!-- <form action="./assets/php/authenticate.php" method="post">
                             <label for="username">
                                 <i class="fas fa-user"></i>
                             </label>
@@ -157,10 +162,11 @@
                             <span class="error">
                                 <p id="name_error"></p>
                             </span>
-                        </form>
+                        </form> -->
                     </div>
                 </div>
             </div>
+            <br><br>
             <p class="emailP">Email
                 <a href="mailto:dmitriy@nutechrx.com?subject=Question About NuTech CE">dmitriy@nutechrx.com</a> if you
                 have any
